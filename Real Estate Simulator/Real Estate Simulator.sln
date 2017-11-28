@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Real Estate Simulator.CSharp", "Real Estate Simulator.CSharp.csproj", "{82811B15-B4A5-5062-BC9C-E693CC7BC923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Real Estate Simulator.CSharp.Editor", "Real Estate Simulator.CSharp.Editor.csproj", "{7A760444-3B37-DA40-E0FE-A45DC20B40DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82811B15-B4A5-5062-BC9C-E693CC7BC923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82811B15-B4A5-5062-BC9C-E693CC7BC923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82811B15-B4A5-5062-BC9C-E693CC7BC923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82811B15-B4A5-5062-BC9C-E693CC7BC923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A760444-3B37-DA40-E0FE-A45DC20B40DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A760444-3B37-DA40-E0FE-A45DC20B40DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A760444-3B37-DA40-E0FE-A45DC20B40DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A760444-3B37-DA40-E0FE-A45DC20B40DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Button
   - Controller
+  - Home
+  - Moon
+  - Sun
+  - ModelHome
   layers:
   - Default
   - TransparentFX
@@ -15,9 +19,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - laserMask
+  - clickMask1
+  - clickMask2
   - 
   - 
   - 

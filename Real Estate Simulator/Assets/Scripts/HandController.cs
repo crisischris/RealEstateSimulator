@@ -45,7 +45,7 @@ public class HandController : MonoBehaviour
     public bool menuYrotate = false;
     public bool menuZrotate = false;
     public bool menuRotateReady = false;
-    public bool isGrabbing = false;
+    public bool isGrabbingAnything = false;
     public bool isGrabbingModel = false;
 
     public LayerMask[] clickMask;
@@ -202,7 +202,7 @@ public class HandController : MonoBehaviour
 
         }
 
-        if (isGrabbing == true)
+        if (isGrabbingAnything == true)
         {
             controllerMesh.SetActive(false);
         }
@@ -282,7 +282,7 @@ public class HandController : MonoBehaviour
         col.transform.SetParent(gameObject.transform);
         col.GetComponent<Rigidbody>().isKinematic = true;
         device.TriggerHapticPulse(1000);
-        isGrabbing = true;        
+        isGrabbingModel= true;        
     }
 
     void dropObjectModel(Collider col)
@@ -294,7 +294,7 @@ public class HandController : MonoBehaviour
         rigidBody.isKinematic = false;
         rigidBody.velocity = Vector3.zero;
         rigidBody.angularVelocity = Vector3.zero;
-        isGrabbing = false;
+        isGrabbingModel = false;
     }
 
     public void hapticTrigger()

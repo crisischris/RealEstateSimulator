@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class ModelControl : MonoBehaviour
 {
+    public ObjectManager objectManager;
 
     public HandController handController1;
     public HandController handController2;
@@ -56,7 +57,15 @@ public class ModelControl : MonoBehaviour
         distanceToStartPosY = 1 + startPos.y;
         startPosHigh = new Vector3(startPos.x, distanceFromStartPos, startPos.y);
 
-        Debug.Log(modelDistanceToHead);
+        
+        step = speed * Time.deltaTime;
+
+        //warp to model scene when close model is being grabbed and is close to user's face.
+
+        if (objectManager.readyToWarp == true)
+        {
+            warp();
+        }
 
         //if(currentPos == startPos)
         //{
@@ -76,13 +85,14 @@ public class ModelControl : MonoBehaviour
 
                 if (currentPos.y < startPos.y)
                 {
+                   
                     gameObject.transform.position = Vector3.MoveTowards(transform.position, startPosHigh, step);
                     gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
                 }
 
                 else
                 {
-
+                    
                     gameObject.transform.position = Vector3.MoveTowards(transform.position, startPos, step);
                     gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
 
@@ -95,17 +105,7 @@ public class ModelControl : MonoBehaviour
             }
 
 
-            if (beingMoved == true)
-            {
-
-                modelDistanceToHead = Vector3.Distance(currentPosInParent, eyes.transform.localPosition);
-                
-
-                if (modelDistanceToHead < .15f)
-                {
-                    warp();
-                }
-            }
+           
             //  if (gameObject.transform.position.y < startPos.y)
             //  
             //  gameObject.transform.position = Vector3.up*Time.deltaTime;
@@ -152,6 +152,10 @@ public class ModelControl : MonoBehaviour
 
 
         SteamVR_LoadLevel.Begin(scene, false, 2);
+        gameObject.SetActive(false);
+        handController1.hapticTrigger();
+        handController2.hapticTrigger();
+        //grow the transform maybe - like make it bigger while fading
 
 
     }

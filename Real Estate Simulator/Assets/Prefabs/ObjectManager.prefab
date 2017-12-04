@@ -53,3 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model1: {fileID: 0}
   model2: {fileID: 0}
+  head: {fileID: 0}
+  readyToWarp: 0
+  modelBeingGrabbed: 0
+  modelStartPos: {x: 0, y: 0, z: 0}
+  modelDistanceToHead: 0

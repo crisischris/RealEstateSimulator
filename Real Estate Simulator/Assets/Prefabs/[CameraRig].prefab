@@ -1017,7 +1017,7 @@ MonoBehaviour:
   menuYrotate: 0
   menuZrotate: 0
   menuRotateReady: 1
-  isGrabbing: 0
+  isGrabbingAnything: 0
   isGrabbingModel: 0
   clickMask:
   - serializedVersion: 2
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   menuYrotate: 0
   menuZrotate: 0
   menuRotateReady: 0
-  isGrabbing: 0
+  isGrabbingAnything: 0
   isGrabbingModel: 0
   clickMask:
   - serializedVersion: 2

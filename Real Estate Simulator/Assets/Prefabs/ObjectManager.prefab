@@ -53,7 +53,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model1: {fileID: 0}
   model2: {fileID: 0}
-  head: {fileID: 0}
+  eyes: {fileID: 0}
+  houseImage1: {fileID: 0}
+  houseImage2: {fileID: 0}
+  controller1: {fileID: 0}
+  controller2: {fileID: 0}
   readyToWarp: 0
   modelBeingGrabbed: 0
   modelStartPos: {x: 0, y: 0, z: 0}

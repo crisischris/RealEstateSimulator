@@ -81,14 +81,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Fun.cs" />
     <Compile Include="Assets\Scripts\HandController.cs" />
-    <Compile Include="Assets\Scripts\HandControllerAlt.cs" />
     <Compile Include="Assets\Scripts\MatChange.cs" />
     <Compile Include="Assets\Scripts\ModelControl.cs" />
     <Compile Include="Assets\Scripts\ObjectManager.cs" />
-    <Compile Include="Assets\Scripts\RefUI.cs" />
     <Compile Include="Assets\Scripts\rotate.cs" />
+    <Compile Include="Assets\Scripts\TileImages.cs" />
     <Compile Include="Assets\Scripts\UIHover.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />

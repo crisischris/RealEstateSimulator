@@ -11,20 +11,16 @@ public class TileImages : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-
-        if (objectManager.LargeMode2IsActive == true)
-        {
+        
+       // if (objectManager.LargeMode2IsActive == true)
+       // {
             for (int i = 0; i < tiles.Length; i++)
             {
                 Renderer mat = tiles[i].GetComponent<Renderer>();
                 mat.material = tileImages[i];
 
-            }
+         //   }
         }
-
-
-
     }
 
     // Update is called once per frame

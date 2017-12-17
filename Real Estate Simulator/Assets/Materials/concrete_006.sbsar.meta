@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 667355ee547c0d94c900b4d618406049
-timeCreated: 1511845613
+timeCreated: 1513533838
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -23,7 +23,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: $randomseed
       value:
-        scalar[0]: 0
+        scalar[0]: 5167
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -163,14 +163,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: moisture
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: paint
       value:
-        scalar[0]: 0.8
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -198,15 +198,15 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: damages
       value:
-        scalar[0]: 0.2
+        scalar[0]: 0.017
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     materialInformation:
       serializedVersion: 5
-      offset: {x: 0, y: 0}
-      scale: {x: 1, y: 1}
+      offset: {x: 0, y: -0.46}
+      scale: {x: 0.01, y: 0.01}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 42
@@ -215,8 +215,8 @@ SubstanceImporter:
       texEnvs:
       - _BumpMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 10}
-          offset: {x: 0, y: 0}
+          scale: {x: 0.01, y: 0.01}
+          offset: {x: 0, y: -0.46}
       - _DetailAlbedoMap:
           texture: {instanceID: 0}
           scale: {x: 1, y: 1}
@@ -231,24 +231,24 @@ SubstanceImporter:
           offset: {x: 0, y: 0}
       - _EmissionMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
+          scale: {x: 0.01, y: 0.01}
+          offset: {x: 0, y: -0.46}
       - _MainTex:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
+          scale: {x: 0.01, y: 0.01}
+          offset: {x: 0, y: -0.46}
       - _MetallicGlossMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 10}
-          offset: {x: 0, y: 0}
+          scale: {x: 0.01, y: 0.01}
+          offset: {x: 0, y: -0.46}
       - _OcclusionMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 10}
-          offset: {x: 0, y: 0}
+          scale: {x: 0.01, y: 0.01}
+          offset: {x: 0, y: -0.46}
       - _ParallaxMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 10}
-          offset: {x: 0, y: 0}
+          scale: {x: 0.01, y: 0.01}
+          offset: {x: 0, y: -0.46}
       floats:
       - _BumpScale: 1
       - _Cutoff: 0.5

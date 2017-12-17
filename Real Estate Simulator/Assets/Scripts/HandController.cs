@@ -149,12 +149,15 @@ public class HandController : MonoBehaviour
                         {
                             if (currentLaserMaskBeingHit == LayerMask.NameToLayer("clickMask1"))
                             {
+
+                                objectManager.sources[3].Play();
                                 objectManager.enableModel1();
                                 hapticTrigger();
                             }
 
                             if (currentLaserMaskBeingHit == LayerMask.NameToLayer("clickMask2"))
                             {
+                                objectManager.sources[3].Play();
                                 objectManager.enableModel2();
                                 objectManager.LargeMode2();
                                 hapticTrigger();
@@ -162,6 +165,7 @@ public class HandController : MonoBehaviour
 
                             if (currentObjectBeingHit.name == "BackButton")
                             {
+                                objectManager.sources[3].Play();
                                 objectManager.enableModel2();
                                 objectManager.BackToTileMode();
                                 hapticTrigger();
@@ -242,7 +246,11 @@ public class HandController : MonoBehaviour
             controllerMesh.SetActive(false);
             uiMenu.SetActive(true);
             menuIsActive = true;
-            lr.enabled = false;
+
+            if (gameObject.GetComponent<LineRenderer>() == true)
+            {
+                lr.enabled = false;
+            }
 
         }
 

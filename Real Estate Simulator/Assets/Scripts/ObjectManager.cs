@@ -16,6 +16,8 @@ public class ObjectManager : MonoBehaviour
     public GameObject backButton;
 
 
+    public AudioSource[] sources;
+
     public GameObject billboard2Large;
 
 

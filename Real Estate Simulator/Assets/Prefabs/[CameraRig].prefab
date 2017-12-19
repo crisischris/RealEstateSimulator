@@ -1002,7 +1002,7 @@ MonoBehaviour:
   controllerMesh: {fileID: 1570070348467158}
   controllerPrefab: {fileID: 1401678261394966}
   currentObjectBeingHit: {fileID: 0}
-  scene: Main
+  scene: HomeSpace
   currentObjectBeingHitScale: {x: 0, y: 0, z: 0}
   currentObjectBeingHitScaleHover: {x: 0, y: 0, z: 0}
   lr: {fileID: 0}
@@ -1025,6 +1025,7 @@ MonoBehaviour:
   menuRotateReady: 0
   isGrabbingAnything: 0
   isGrabbingModel: 0
+  laserForceOff: 0
   clickMask: []
   currentLaserMaskBeingHit:
     serializedVersion: 2
@@ -1314,7 +1315,7 @@ MonoBehaviour:
   controllerMesh: {fileID: 1462930671401842}
   controllerPrefab: {fileID: 1928048009189526}
   currentObjectBeingHit: {fileID: 0}
-  scene: Main
+  scene: HomeSpace
   currentObjectBeingHitScale: {x: 0, y: 0, z: 0}
   currentObjectBeingHitScaleHover: {x: 0, y: 0, z: 0}
   lr: {fileID: 120940179470551234}
@@ -1337,9 +1338,10 @@ MonoBehaviour:
   menuRotateReady: 0
   isGrabbingAnything: 0
   isGrabbingModel: 0
+  laserForceOff: 0
   clickMask:
   - serializedVersion: 2
-    m_Bits: 1792
+    m_Bits: 3840
   currentLaserMaskBeingHit:
     serializedVersion: 2
     m_Bits: 0

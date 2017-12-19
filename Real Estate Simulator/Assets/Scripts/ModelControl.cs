@@ -137,7 +137,7 @@ public class ModelControl : MonoBehaviour
 
 
         //rotate model
-        transform.Rotate(Vector3.up * (Time.deltaTime * rotateSpeed));
+        gameObject.transform.Rotate(Vector3.up * (Time.deltaTime * rotateSpeed));
 
         //gameObject.transform.Rotate(Vector3.up * (Time.deltaTime * rotateSpeed));
         //vectorToNotRotate = 0;

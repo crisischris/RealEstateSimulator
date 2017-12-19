@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HandController : MonoBehaviour
 {
@@ -59,6 +60,8 @@ public class HandController : MonoBehaviour
     public bool isGrabbingAnything = false;
     public bool isGrabbingModel = false;
 
+    public bool laserForceOff = false;
+
     public LayerMask[] clickMask;
 
     public LayerMask currentLaserMaskBeingHit;
@@ -85,7 +88,8 @@ public class HandController : MonoBehaviour
 
 
 
-        Debug.Log(currentObjectBeingHit);
+       // Debug.Log(currentObjectBeingHit);
+
 
         //assign Vars
 
@@ -115,9 +119,6 @@ public class HandController : MonoBehaviour
         //-------------------------------------------------------------------------
 
 
-
-
-
         if (laserHand == true)
         {
             if (isGrabbingModel == false && menuIsActive == false)
@@ -127,12 +128,20 @@ public class HandController : MonoBehaviour
                 for (int i = 0; i < clickMask.Length; i++)
                 {
 
+
+
                     if (Physics.Raycast(transform.position, transform.forward, out hit, maxLaserLength, clickMask[i]))
                     {
                         lr.SetPosition(1, hit.point);
                         lr.enabled = true;
                         currentObjectBeingHit = hit.transform.gameObject;
                         currentLaserMaskBeingHit = hit.transform.gameObject.layer;
+
+                        if (laserForceOff == true)
+                        {
+                            gameObject.GetComponent<LineRenderer>().enabled = false;
+
+                        }
 
 
 
@@ -144,52 +153,61 @@ public class HandController : MonoBehaviour
                         // {
                         //     hoverEnlargedScale = currentObjectBeingHit.transform.localScale;
                         // }
-
-                        if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+                        if (lr.enabled == true)
                         {
-                            if (currentLaserMaskBeingHit == LayerMask.NameToLayer("clickMask1"))
+                            if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
                             {
+                                if (currentLaserMaskBeingHit == LayerMask.NameToLayer("clickMask1"))
+                                {
 
-                                objectManager.sources[3].Play();
-                                objectManager.enableModel1();
-                                hapticTrigger();
+                                    objectManager.sources[3].Play();
+                                    objectManager.enableModel1();
+                                    objectManager.LargeMode1();
+                                    hapticTrigger();
+                                }
+
+                                if (currentLaserMaskBeingHit == LayerMask.NameToLayer("clickMask2"))
+                                {
+                                    objectManager.sources[3].Play();
+                                    objectManager.enableModel2();
+                                    objectManager.LargeMode2();
+                                    hapticTrigger();
+                                }
+
+                                if (currentLaserMaskBeingHit == LayerMask.NameToLayer("clickMask3"))
+                                {
+                                    objectManager.sources[3].Play();
+                                    objectManager.enableModel3();
+                                    objectManager.LargeMode3();
+                                    hapticTrigger();
+                                }
+
+                                if (currentObjectBeingHit.name == "BackButton")
+                                {
+                                    objectManager.sources[3].Play();
+                                    objectManager.BackToTileMode();
+                                    hapticTrigger();
+                                }
                             }
 
-                            if (currentLaserMaskBeingHit == LayerMask.NameToLayer("clickMask2"))
-                            {
-                                objectManager.sources[3].Play();
-                                objectManager.enableModel2();
-                                objectManager.LargeMode2();
-                                hapticTrigger();
-                            }
 
-                            if (currentObjectBeingHit.name == "BackButton")
-                            {
-                                objectManager.sources[3].Play();
-                                objectManager.enableModel2();
-                                objectManager.BackToTileMode();
-                                hapticTrigger();
-                            }
+                            // currentObjectBeingHit.transform.localScale = currentObjectBeingHitStartScale;
+
+                           // Debug.Log("laser is on something");
+                            
                         }
-
-
-                        // currentObjectBeingHit.transform.localScale = currentObjectBeingHitStartScale;
-
-                        Debug.Log("laser is on something");
-
-
-
+                        
                     }
 
                     else
                     {
                         lr.enabled = false;
                     }
-
                 }
             }
-
         }
+
+
 
         //if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, clickMask[2]))
         //{
@@ -262,9 +280,14 @@ public class HandController : MonoBehaviour
             menuIsActive = false;
         }
 
-        if (isGrabbingAnything == true)
+        if (isGrabbingModel == true)
         {
-            controllerMesh.SetActive(false);
+
+            if (gameObject.GetComponent<LineRenderer>() == true)
+            {
+                lr.enabled = false;
+            }
+
         }
 
         /*
@@ -315,17 +338,11 @@ public class HandController : MonoBehaviour
 
         if (col.gameObject.CompareTag("ModelHome"))
         {
-
-            if (gameObject.GetComponent<LineRenderer>() == true)
-            {
-                lr.enabled = false;
-            }
-
-
-            if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+                if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
             {
                 dropObjectModel(col);
                 isGrabbingModel = false;
+                StartCoroutine(delayLaser());
             }
             else if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
             {
@@ -336,7 +353,6 @@ public class HandController : MonoBehaviour
                 {
                     lr.enabled = false;
                 }
-
             }
         }
     }
@@ -346,11 +362,6 @@ public class HandController : MonoBehaviour
         if (col.gameObject.tag.Contains("Model"))
         {
             device.TriggerHapticPulse(1000);
-
-            if (gameObject.GetComponent<LineRenderer>() == true)
-            {
-                lr.enabled = false;
-            }
         }
     }
 
@@ -424,6 +435,13 @@ public class HandController : MonoBehaviour
     public void hapticTrigger()
     {
         device.TriggerHapticPulse(2000);
+    }
+
+    IEnumerator delayLaser()
+    {
+        laserForceOff = true;
+        yield return new WaitForSeconds(.5f);
+        laserForceOff = false;
     }
 }
 

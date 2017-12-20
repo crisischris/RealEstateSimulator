@@ -6,8 +6,15 @@ using UnityEngine.UI;
 public class ObjectManager : MonoBehaviour
 {
 
+
     public float remappedX;
     public float remappedY;
+
+    public bool helperMenuIsOff = false;
+
+    public GameObject helperMenuParent;
+    public List<GameObject> helperMenuText;
+    public int currentMenuPlace = 0;
 
     public GameObject model1;
     public GameObject model2;
@@ -38,8 +45,8 @@ public class ObjectManager : MonoBehaviour
     public bool modelBeingGrabbed;
 
     public Vector3 modelStartPos;
-   // public Vector3 billboard1StartScale;
-   // public Vector3 billboard2StartScale;
+    // public Vector3 billboard1StartScale;
+    // public Vector3 billboard2StartScale;
 
 
     public float modelDistanceToHead;
@@ -49,12 +56,12 @@ public class ObjectManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-       /// billboard1StartScale = billboard1.transform.localScale;
-       /// billboard2StartScale = billboard2.transform.localScale;
-       ///
-       /// float remappedScaleX = Mathf.Lerp(0, 1, Mathf.InverseLerp(0, billboard1StartScale.x, remappedX));
-       /// float remappedScaleY = Mathf.Lerp(0, 1, Mathf.InverseLerp(0, billboard1StartScale.y, remappedY));
-       /// Vector3 hoverEnlargedScale = new Vector3(remappedScaleX, remappedScaleY, billboard1StartScale.z);
+        /// billboard1StartScale = billboard1.transform.localScale;
+        /// billboard2StartScale = billboard2.transform.localScale;
+        ///
+        /// float remappedScaleX = Mathf.Lerp(0, 1, Mathf.InverseLerp(0, billboard1StartScale.x, remappedX));
+        /// float remappedScaleY = Mathf.Lerp(0, 1, Mathf.InverseLerp(0, billboard1StartScale.y, remappedY));
+        /// Vector3 hoverEnlargedScale = new Vector3(remappedScaleX, remappedScaleY, billboard1StartScale.z);
 
 
     }
@@ -79,10 +86,10 @@ public class ObjectManager : MonoBehaviour
         {
 
             modelDistanceToHead = Vector3.Distance(controller1.transform.position, eyes.transform.position);
-           // Debug.Log(modelDistanceToHead);
+            // Debug.Log(modelDistanceToHead);
             if (modelDistanceToHead < .25f)
             {
-                readyToWarp = true;                
+                readyToWarp = true;
             }
 
             else
@@ -105,7 +112,7 @@ public class ObjectManager : MonoBehaviour
                 readyToWarp = false;
             }
         }
-        
+
     }
 
     //-------------------------------------------------------------------------
@@ -173,9 +180,37 @@ public class ObjectManager : MonoBehaviour
         billboard1Large.SetActive(false);
         billboard2Large.SetActive(false);
         billboard3Large.SetActive(false);
-
         backButton.SetActive(false);
+    }
 
+    public void helperMenuRight()
+    {
+        helperMenuText[currentMenuPlace].SetActive(false);
+        currentMenuPlace++;
+
+        if (currentMenuPlace >= helperMenuText.Count)
+        {
+            helperMenuParent.SetActive(false);
+            controller1.GetComponent<HandController>().helperMenuOn = false;
+            controller2.GetComponent<HandController>().helperMenuOn = false;
+        }
+
+        else
+
+            helperMenuText[currentMenuPlace].SetActive(true);
+
+    }
+
+    public void helperMenuLeft()
+    {
+        helperMenuText[currentMenuPlace].SetActive(false);
+        currentMenuPlace--;
+        if (currentMenuPlace < 0)
+        {
+            currentMenuPlace = 0;
+        }
+
+        helperMenuText[currentMenuPlace].SetActive(true);
 
     }
 }

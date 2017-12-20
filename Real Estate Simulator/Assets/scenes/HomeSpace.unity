@@ -145,6 +145,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4725815829991246, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.42206216
@@ -196,12 +201,12 @@ Prefab:
         type: 2}
       propertyPath: billboard1
       value: 
-      objectReference: {fileID: 1315489790}
+      objectReference: {fileID: 1808165075}
     - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
         type: 2}
       propertyPath: billboard2
       value: 
-      objectReference: {fileID: 1808165075}
+      objectReference: {fileID: 617266371}
     - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
         type: 2}
       propertyPath: backButton
@@ -251,6 +256,65 @@ Prefab:
       propertyPath: billboard3
       value: 
       objectReference: {fileID: 1315489790}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[0]
+      value: 
+      objectReference: {fileID: 1961221056}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[1]
+      value: 
+      objectReference: {fileID: 1103418790}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[2]
+      value: 
+      objectReference: {fileID: 85268741}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[3]
+      value: 
+      objectReference: {fileID: 556320282}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuParent
+      value: 
+      objectReference: {fileID: 854731325}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[4]
+      value: 
+      objectReference: {fileID: 1145786878}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[5]
+      value: 
+      objectReference: {fileID: 1008849016}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[6]
+      value: 
+      objectReference: {fileID: 1186230725}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[7]
+      value: 
+      objectReference: {fileID: 1145786878}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[8]
+      value: 
+      objectReference: {fileID: 1008849016}
+    - target: {fileID: 114510293483014590, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f,
+        type: 2}
+      propertyPath: helperMenuText.Array.data[9]
+      value: 
+      objectReference: {fileID: 1186230725}
+    - target: {fileID: 1389171413809144, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2f1e0b56f52fa34388dbcbd90f5aa6f, type: 2}
   m_IsPrefabParent: 0
@@ -282,39 +346,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &106371427
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &85268741 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1812975625518398, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
 --- !u!1 &115244911
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +559,7 @@ GameObject:
   - component: {fileID: 179606287}
   - component: {fileID: 179606286}
   - component: {fileID: 179606285}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +734,7 @@ GameObject:
   - component: {fileID: 219088927}
   - component: {fileID: 219088929}
   - component: {fileID: 219088928}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1278,7 +1314,7 @@ GameObject:
   - component: {fileID: 440915867}
   - component: {fileID: 440915869}
   - component: {fileID: 440915868}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,6 +1412,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &454321039
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &479506758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,7 +1455,7 @@ GameObject:
   - component: {fileID: 479506759}
   - component: {fileID: 479506761}
   - component: {fileID: 479506760}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: address
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1522,7 +1591,7 @@ GameObject:
   - component: {fileID: 493471772}
   - component: {fileID: 493471774}
   - component: {fileID: 493471773}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1672,7 +1741,7 @@ GameObject:
   - component: {fileID: 529639129}
   - component: {fileID: 529639131}
   - component: {fileID: 529639130}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1812,6 +1881,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533145733}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &556320282 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1739956100897668, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
 --- !u!1 &556828386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1957,7 @@ GameObject:
   - component: {fileID: 591040032}
   - component: {fileID: 591040034}
   - component: {fileID: 591040033}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1957,7 +2031,7 @@ GameObject:
   - component: {fileID: 591102235}
   - component: {fileID: 591102237}
   - component: {fileID: 591102236}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2850,7 +2924,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 831478727}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Descript text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2881,6 +2955,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &854731325 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1698505309773014, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
 --- !u!1 &856886682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,7 +2971,7 @@ GameObject:
   - component: {fileID: 856886686}
   - component: {fileID: 856886685}
   - component: {fileID: 856886684}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2973,7 +3052,7 @@ GameObject:
   - component: {fileID: 952851139}
   - component: {fileID: 952851141}
   - component: {fileID: 952851140}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: metrics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3119,134 +3198,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 963568347}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!43 &969006956
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_Skin: []
-  m_VertexData:
-    m_CurrentChannels: 13
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshOptimized: 0
 --- !u!1 &969518917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,7 +3364,7 @@ GameObject:
   - component: {fileID: 993130472}
   - component: {fileID: 993130474}
   - component: {fileID: 993130473}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3529,7 +3480,7 @@ GameObject:
   - component: {fileID: 1001429697}
   - component: {fileID: 1001429699}
   - component: {fileID: 1001429698}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: address
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3593,6 +3544,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001429696}
+--- !u!1 &1008849016 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1656843096827010, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
 --- !u!1 &1014614570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,7 +3688,7 @@ GameObject:
   - component: {fileID: 1075182654}
   - component: {fileID: 1075182656}
   - component: {fileID: 1075182655}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3810,7 +3766,7 @@ GameObject:
   - component: {fileID: 1102990513}
   - component: {fileID: 1102990512}
   - component: {fileID: 1102990511}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3881,6 +3837,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1102990509}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1103418790 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1324508741273818, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
+--- !u!1 &1145786878 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1874918318132976, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
 --- !u!1 &1152113249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,6 +4072,11 @@ MonoBehaviour:
   - {fileID: 745091233}
   - {fileID: 1152406939}
   - {fileID: 1152113249}
+--- !u!1 &1186230725 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1535045062279114, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
 --- !u!1 &1212713812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4116,7 +4087,7 @@ GameObject:
   - component: {fileID: 1212713813}
   - component: {fileID: 1212713815}
   - component: {fileID: 1212713814}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: address
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4706,7 +4677,7 @@ GameObject:
   - component: {fileID: 1412128877}
   - component: {fileID: 1412128879}
   - component: {fileID: 1412128878}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: metrics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4970,16 +4941,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 33441459347301312, guid: 67efc13956311304c91813f1c6e58b77,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 969006956}
     - target: {fileID: 23510531961747036, guid: 67efc13956311304c91813f1c6e58b77,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 106371427}
+      objectReference: {fileID: 454321039}
+    - target: {fileID: 33441459347301312, guid: 67efc13956311304c91813f1c6e58b77,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1695185899}
     - target: {fileID: 114097912426033618, guid: 67efc13956311304c91813f1c6e58b77,
         type: 2}
       propertyPath: objectManager
@@ -5003,7 +4974,7 @@ GameObject:
   - component: {fileID: 1461341291}
   - component: {fileID: 1461341293}
   - component: {fileID: 1461341292}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5071,7 +5042,7 @@ GameObject:
   - component: {fileID: 1461914629}
   - component: {fileID: 1461914631}
   - component: {fileID: 1461914630}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5222,7 +5193,7 @@ GameObject:
   - component: {fileID: 1483539633}
   - component: {fileID: 1483539632}
   - component: {fileID: 1483539631}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5382,7 +5353,7 @@ GameObject:
   - component: {fileID: 1528954016}
   - component: {fileID: 1528954018}
   - component: {fileID: 1528954017}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: metrics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5612,6 +5583,134 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1680274427}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!43 &1695185899
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 13
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!1 &1696500844
 GameObject:
   m_ObjectHideFlags: 0
@@ -5623,7 +5722,7 @@ GameObject:
   - component: {fileID: 1696500848}
   - component: {fileID: 1696500847}
   - component: {fileID: 1696500846}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5798,7 +5897,7 @@ GameObject:
   - component: {fileID: 1748625269}
   - component: {fileID: 1748625271}
   - component: {fileID: 1748625270}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5864,7 +5963,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1749801355}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Descript text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6256,7 +6355,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1900054896}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Descript text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6297,7 +6396,7 @@ GameObject:
   - component: {fileID: 1950147231}
   - component: {fileID: 1950147233}
   - component: {fileID: 1950147232}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6361,6 +6460,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950147230}
+--- !u!1 &1961221056 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1407890818208540, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
 --- !u!1 &2070230827
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,7 +6591,7 @@ GameObject:
   - component: {fileID: 2129112879}
   - component: {fileID: 2129112878}
   - component: {fileID: 2129112877}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

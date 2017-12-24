@@ -6,15 +6,10 @@ using UnityEngine.UI;
 public class ObjectManager : MonoBehaviour
 {
 
-
     public float remappedX;
     public float remappedY;
 
-    public bool helperMenuIsOff = false;
-
-    public GameObject helperMenuParent;
-    public List<GameObject> helperMenuText;
-    public int currentMenuPlace = 0;
+   
 
     public GameObject model1;
     public GameObject model2;
@@ -73,6 +68,12 @@ public class ObjectManager : MonoBehaviour
         //assign vars
         modelStartPos = model1.GetComponent<ModelControl>().startPos;
 
+      
+        //if (currentScene.ToString != "HomeSpace")
+        //{
+        //
+        //}   
+
 
         //-------------------------------------------------------------------------
         //                        UI MENU FUNCTIONALITY 
@@ -122,6 +123,8 @@ public class ObjectManager : MonoBehaviour
     //   when selected with the laser
     //-------------------------------------------------------------------------
 
+
+        
     public void enableModel1()
     {
         model1.SetActive(true);
@@ -145,7 +148,7 @@ public class ObjectManager : MonoBehaviour
 
     public void LargeMode1()
     {
-        billboard2Large.SetActive(true);
+        billboard1Large.SetActive(true);
         backButton.SetActive(true);
         billboard1.SetActive(false);
         billboard2.SetActive(false);
@@ -183,34 +186,5 @@ public class ObjectManager : MonoBehaviour
         backButton.SetActive(false);
     }
 
-    public void helperMenuRight()
-    {
-        helperMenuText[currentMenuPlace].SetActive(false);
-        currentMenuPlace++;
 
-        if (currentMenuPlace >= helperMenuText.Count)
-        {
-            helperMenuParent.SetActive(false);
-            controller1.GetComponent<HandController>().helperMenuOn = false;
-            controller2.GetComponent<HandController>().helperMenuOn = false;
-        }
-
-        else
-
-            helperMenuText[currentMenuPlace].SetActive(true);
-
-    }
-
-    public void helperMenuLeft()
-    {
-        helperMenuText[currentMenuPlace].SetActive(false);
-        currentMenuPlace--;
-        if (currentMenuPlace < 0)
-        {
-            currentMenuPlace = 0;
-        }
-
-        helperMenuText[currentMenuPlace].SetActive(true);
-
-    }
 }

@@ -7,7 +7,16 @@ using UnityEngine.UI;
 public class HandController : MonoBehaviour
 {
 
+    public ObjectManager objectManager;
+    public HelperMenuManager helperMenuManager;
+
+    public SteamVR_TrackedObject trackedObj;
+    public SteamVR_Controller.Device device;
+
+
     public bool helperMenuOn = false;
+
+    public GameObject helperMenuParent;
 
 
 
@@ -15,9 +24,8 @@ public class HandController : MonoBehaviour
     public bool menuIsActive = false;
 
     
-    public SteamVR_TrackedObject trackedObj;
-    public SteamVR_Controller.Device device;
-    public ObjectManager objectManager;
+
+   
 
     public GameObject playerHead;
     public GameObject uiMenu;
@@ -123,6 +131,7 @@ public class HandController : MonoBehaviour
 
         if (helperMenuOn == false)
         {
+            Time.timeScale = 1f;
             if (laserHand == true)
             {
                 if (isGrabbingModel == false && menuIsActive == false)
@@ -225,15 +234,18 @@ public class HandController : MonoBehaviour
 
         if (helperMenuOn == true)
         {
+            Time.timeScale = 0f;
+            controllerMesh.SetActive(false);
+            uiMenu.SetActive(false);
             if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
             {
-               objectManager.helperMenuRight();
+               helperMenuManager.helperMenuRight();
 
             }
 
             if (device.GetPressUp(SteamVR_Controller.ButtonMask.Grip))
             {
-                objectManager.helperMenuLeft();
+                helperMenuManager.helperMenuLeft();
             }
         }
 
@@ -361,8 +373,19 @@ public class HandController : MonoBehaviour
             if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
             {
                 device.TriggerHapticPulse(3000);
-                // Debug.Log("controller pressed and hit button");
                 SteamVR_LoadLevel.Begin(scene, false, 2);
+            }
+        }
+
+        if (col.gameObject.CompareTag("Helper"))
+        {
+            if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+            {
+                device.TriggerHapticPulse(3000);
+                helperMenuManager.TurnOnHelperBothControllers();
+                helperMenuParent.SetActive(true);
+                //uiMenu.SetActive(false);
+
             }
         }
 
@@ -466,6 +489,8 @@ public class HandController : MonoBehaviour
     {
         device.TriggerHapticPulse(2000);
     }
+
+
 
     IEnumerator delayLaser()
     {

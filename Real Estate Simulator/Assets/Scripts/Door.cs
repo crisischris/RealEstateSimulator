@@ -5,8 +5,12 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
 
-    public ObjectManager objectManager;
-    private GameObject eyes;
+    public GameObject headEyes;
+
+    public AudioSource[] sources;
+    public AudioClip openSound;
+    public AudioClip closeSound;
+
 
     public float doorDistanceToHead;
 
@@ -15,6 +19,12 @@ public class Door : MonoBehaviour
     public Vector3 localPos;
 
     public int DoorCounter = 1;
+    public int audioCounter = 1;
+
+
+    public int rotateDirection;
+
+    public bool doorOpensOnce;
 
 
     // Use this for initialization
@@ -22,11 +32,7 @@ public class Door : MonoBehaviour
     {
 
         DoorCounter = 1;
-        eyes = objectManager.eyes;
         doorPos = transform.position;
-
-
-
 
     }
 
@@ -34,52 +40,59 @@ public class Door : MonoBehaviour
     void Update()
     {
 
-        playerPos = eyes.transform.position;
+        playerPos = headEyes.transform.position;
         doorDistanceToHead = Vector3.Distance(doorPos, playerPos);
 
 
-        if (doorDistanceToHead <= 3 && DoorCounter == 1)
+        if (doorDistanceToHead <= 1.5 && DoorCounter == 1)
         {
             StartCoroutine(openDoor());
-            StartCoroutine(openDoorAudio());
+            if (audioCounter == 1)
+            {
+                openDoorAudio();
+            }
         }
 
-        if (doorDistanceToHead > 3 && DoorCounter == 2)
+        if (doorDistanceToHead > 1.5 && DoorCounter == 2)
         {
-            StartCoroutine(closeDoor());
-            StartCoroutine(closeDoorAudio());
+
+            if (!doorOpensOnce)
+            {
+                StartCoroutine(closeDoor());
+                if (audioCounter == 2)
+                {
+                    closeDoorAudio();
+
+                }
+            }
         }
     }
 
     IEnumerator openDoor()
     {
-        objectManager.sources[1].Play();
-        gameObject.transform.Rotate(Vector3.up, 90 * Time.deltaTime);
+        gameObject.transform.Rotate(Vector3.up, rotateDirection * Time.deltaTime);
         yield return new WaitForSeconds(1);
         DoorCounter = 2;
     }
 
     IEnumerator closeDoor()
     {
-        objectManager.sources[2].Play();
-        gameObject.transform.Rotate(Vector3.up, -90 * Time.deltaTime);
+        gameObject.transform.Rotate(Vector3.up, -rotateDirection * Time.deltaTime);
         yield return new WaitForSeconds(1);
         DoorCounter = 1;
     }
 
-
-    IEnumerator closeDoorAudio()
+    public void openDoorAudio()
     {
-        AudioSource thisClip = objectManager.sources[1];
-        objectManager.sources[1].Play();
-        yield return new WaitForSeconds(thisClip.clip.length);
+        sources[0].PlayOneShot(openSound);
+        audioCounter = 2;
+
     }
 
-    IEnumerator openDoorAudio()
+    public void closeDoorAudio()
     {
-        AudioSource thisClip = objectManager.sources[2];
-        objectManager.sources[2].Play();
-        yield return new WaitForSeconds(thisClip.clip.length);
+        sources[1].PlayOneShot(closeSound);
+        audioCounter = 1;
     }
 
 }

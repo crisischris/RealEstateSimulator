@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 8ddfbd143ce78ff46a9c2f9751a6eecb
+timeCreated: 1513987810
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000
+  assetHash:
+    serializedVersion: 2
+    Hash: 4ff7b60304f85eba7757fb3492003edf
+  longitude: -118.34512062033912
+  latitude: 34.13931060887046
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -31.06126, y: 24.144512, z: 30.875923}
+      lookAt: {x: -12.124301, y: 10.542212, z: 12.3442335}
+      up: {x: 0.32641417, y: 0.88961744, z: -0.3194286}
+      fov: 55
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Component#1
+    100004: Component#1 1
+    100006: Component#1 2
+    100008: Component#1 3
+    100010: Component#2
+    100012: Component#2 1
+    100014: Component#3
+    100016: Component#4
+    100018: Component#4 1
+    100020: Component#4 10
+    100022: Component#4 11
+    100024: Component#4 12
+    100026: Component#4 13
+    100028: Component#4 14
+    100030: Component#4 15
+    100032: Component#4 16
+    100034: Component#4 17
+    100036: Component#4 18
+    100038: Component#4 19
+    100040: Component#4 2
+    100042: Component#4 20
+    100044: Component#4 21
+    100046: Component#4 22
+    100048: Component#4 23
+    100050: Component#4 24
+    100052: Component#4 25
+    100054: Component#4 26
+    100056: Component#4 27
+    100058: Component#4 28
+    100060: Component#4 29
+    100062: Component#4 3
+    100064: Component#4 30
+    100066: Component#4 31
+    100068: Component#4 32
+    100070: Component#4 33
+    100072: Component#4 34
+    100074: Component#4 35
+    100076: Component#4 36
+    100078: Component#4 37
+    100080: Component#4 38
+    100082: Component#4 39
+    100084: Component#4 4
+    100086: Component#4 40
+    100088: Component#4 41
+    100090: Component#4 5
+    100092: Component#4 6
+    100094: Component#4 7
+    100096: Component#4 8
+    100098: Component#4 9
+    100100: Component#5
+    100102: Component#5 1
+    100104: Component#5 10
+    100106: Component#5 11
+    100108: Component#5 12
+    100110: Component#5 13
+    100112: Component#5 14
+    100114: Component#5 15
+    100116: Component#5 16
+    100118: Component#5 17
+    100120: Component#5 18
+    100122: Component#5 19
+    100124: Component#5 2
+    100126: Component#5 20
+    100128: Component#5 21
+    100130: Component#5 22
+    100132: Component#5 23
+    100134: Component#5 24
+    100136: Component#5 25
+    100138: Component#5 26
+    100140: Component#5 27
+    100142: Component#5 28
+    100144: Component#5 29
+    100146: Component#5 3
+    100148: Component#5 30
+    100150: Component#5 31
+    100152: Component#5 32
+    100154: Component#5 33
+    100156: Component#5 34
+    100158: Component#5 35
+    100160: Component#5 36
+    100162: Component#5 37
+    100164: Component#5 38
+    100166: Component#5 39
+    100168: Component#5 4
+    100170: Component#5 40
+    100172: Component#5 41
+    100174: Component#5 5
+    100176: Component#5 6
+    100178: Component#5 7
+    100180: Component#5 8
+    100182: Component#5 9
+    100184: Component#6
+    100186: Component#6 1
+    100188: Component#6 2
+    100190: Component#6 3
+    100192: Component#7
+    100194: Component#7 1
+    100196: Component#8
+    100198: Group 1
+    100200: Group 11
+    100202: Group 13
+    100204: Group 15
+    100206: Group 17
+    100208: Group 19
+    100210: Group 3
+    100212: Group 5
+    100214: Group 7
+    100216: Group 9
+    100218: Group 21
+    100220: Component
+    100222: Component#10
+    100224: Component#10 1
+    100226: Component#9
+    100228: Component#9 1
+    100230: Component#9 2
+    100232: Component#9 3
+    100234: Component#9 4
+    100236: Component#9 5
+    100238: Component#9 6
+    100240: Component#9 7
+    100242: Component#9 8
+    100244: Component#9 9
+    100246: Franke Faucet
+    100248: Group 23
+    100250: Group 248
+    100252: Group 25
+    100254: Component#11
+    100256: Component#12
+    100258: Component#13
+    100260: Component#14
+    100262: 'Dark Teak Dining Set '
+    100264: leg
+    100266: leg 1
+    100268: leg 2
+    100270: leg 3
+    100272: paxfocus.dwg
+    100274: top#1
+    100276: Component#16
+    100278: Mirolin Ilusa
+    400000: //RootNode
+    400002: Component#1
+    400004: Component#1 1
+    400006: Component#1 2
+    400008: Component#1 3
+    400010: Component#2
+    400012: Component#2 1
+    400014: Component#3
+    400016: Component#4
+    400018: Component#4 1
+    400020: Component#4 10
+    400022: Component#4 11
+    400024: Component#4 12
+    400026: Component#4 13
+    400028: Component#4 14
+    400030: Component#4 15
+    400032: Component#4 16
+    400034: Component#4 17
+    400036: Component#4 18
+    400038: Component#4 19
+    400040: Component#4 2
+    400042: Component#4 20
+    400044: Component#4 21
+    400046: Component#4 22
+    400048: Component#4 23
+    400050: Component#4 24
+    400052: Component#4 25
+    400054: Component#4 26
+    400056: Component#4 27
+    400058: Component#4 28
+    400060: Component#4 29
+    400062: Component#4 3
+    400064: Component#4 30
+    400066: Component#4 31
+    400068: Component#4 32
+    400070: Component#4 33
+    400072: Component#4 34
+    400074: Component#4 35
+    400076: Component#4 36
+    400078: Component#4 37
+    400080: Component#4 38
+    400082: Component#4 39
+    400084: Component#4 4
+    400086: Component#4 40
+    400088: Component#4 41
+    400090: Component#4 5
+    400092: Component#4 6
+    400094: Component#4 7
+    400096: Component#4 8
+    400098: Component#4 9
+    400100: Component#5
+    400102: Component#5 1
+    400104: Component#5 10
+    400106: Component#5 11
+    400108: Component#5 12
+    400110: Component#5 13
+    400112: Component#5 14
+    400114: Component#5 15
+    400116: Component#5 16
+    400118: Component#5 17
+    400120: Component#5 18
+    400122: Component#5 19
+    400124: Component#5 2
+    400126: Component#5 20
+    400128: Component#5 21
+    400130: Component#5 22
+    400132: Component#5 23
+    400134: Component#5 24
+    400136: Component#5 25
+    400138: Component#5 26
+    400140: Component#5 27
+    400142: Component#5 28
+    400144: Component#5 29
+    400146: Component#5 3
+    400148: Component#5 30
+    400150: Component#5 31
+    400152: Component#5 32
+    400154: Component#5 33
+    400156: Component#5 34
+    400158: Component#5 35
+    400160: Component#5 36
+    400162: Component#5 37
+    400164: Component#5 38
+    400166: Component#5 39
+    400168: Component#5 4
+    400170: Component#5 40
+    400172: Component#5 41
+    400174: Component#5 5
+    400176: Component#5 6
+    400178: Component#5 7
+    400180: Component#5 8
+    400182: Component#5 9
+    400184: Component#6
+    400186: Component#6 1
+    400188: Component#6 2
+    400190: Component#6 3
+    400192: Component#7
+    400194: Component#7 1
+    400196: Component#8
+    400198: Group 1
+    400200: Group 11
+    400202: Group 13
+    400204: Group 15
+    400206: Group 17
+    400208: Group 19
+    400210: Group 3
+    400212: Group 5
+    400214: Group 7
+    400216: Group 9
+    400218: Group 21
+    400220: Component
+    400222: Component#10
+    400224: Component#10 1
+    400226: Component#9
+    400228: Component#9 1
+    400230: Component#9 2
+    400232: Component#9 3
+    400234: Component#9 4
+    400236: Component#9 5
+    400238: Component#9 6
+    400240: Component#9 7
+    400242: Component#9 8
+    400244: Component#9 9
+    400246: Franke Faucet
+    400248: Group 23
+    400250: Group 248
+    400252: Group 25
+    400254: Component#11
+    400256: Component#12
+    400258: Component#13
+    400260: Component#14
+    400262: 'Dark Teak Dining Set '
+    400264: leg
+    400266: leg 1
+    400268: leg 2
+    400270: leg 3
+    400272: paxfocus.dwg
+    400274: top#1
+    400276: Component#16
+    400278: Mirolin Ilusa
+    2300000: Component#1
+    2300002: Component#1 1
+    2300004: Component#1 2
+    2300006: Component#1 3
+    2300008: Component#2
+    2300010: Component#2 1
+    2300012: Component#3
+    2300014: Component#4
+    2300016: Component#4 1
+    2300018: Component#4 10
+    2300020: Component#4 11
+    2300022: Component#4 12
+    2300024: Component#4 13
+    2300026: Component#4 14
+    2300028: Component#4 15
+    2300030: Component#4 16
+    2300032: Component#4 17
+    2300034: Component#4 18
+    2300036: Component#4 19
+    2300038: Component#4 2
+    2300040: Component#4 20
+    2300042: Component#4 21
+    2300044: Component#4 22
+    2300046: Component#4 23
+    2300048: Component#4 24
+    2300050: Component#4 25
+    2300052: Component#4 26
+    2300054: Component#4 27
+    2300056: Component#4 28
+    2300058: Component#4 29
+    2300060: Component#4 3
+    2300062: Component#4 30
+    2300064: Component#4 31
+    2300066: Component#4 32
+    2300068: Component#4 33
+    2300070: Component#4 34
+    2300072: Component#4 35
+    2300074: Component#4 36
+    2300076: Component#4 37
+    2300078: Component#4 38
+    2300080: Component#4 39
+    2300082: Component#4 4
+    2300084: Component#4 40
+    2300086: Component#4 41
+    2300088: Component#4 5
+    2300090: Component#4 6
+    2300092: Component#4 7
+    2300094: Component#4 8
+    2300096: Component#4 9
+    2300098: Component#5
+    2300100: Component#5 1
+    2300102: Component#5 10
+    2300104: Component#5 11
+    2300106: Component#5 12
+    2300108: Component#5 13
+    2300110: Component#5 14
+    2300112: Component#5 15
+    2300114: Component#5 16
+    2300116: Component#5 17
+    2300118: Component#5 18
+    2300120: Component#5 19
+    2300122: Component#5 2
+    2300124: Component#5 20
+    2300126: Component#5 21
+    2300128: Component#5 22
+    2300130: Component#5 23
+    2300132: Component#5 24
+    2300134: Component#5 25
+    2300136: Component#5 26
+    2300138: Component#5 27
+    2300140: Component#5 28
+    2300142: Component#5 29
+    2300144: Component#5 3
+    2300146: Component#5 30
+    2300148: Component#5 31
+    2300150: Component#5 32
+    2300152: Component#5 33
+    2300154: Component#5 34
+    2300156: Component#5 35
+    2300158: Component#5 36
+    2300160: Component#5 37
+    2300162: Component#5 38
+    2300164: Component#5 39
+    2300166: Component#5 4
+    2300168: Component#5 40
+    2300170: Component#5 41
+    2300172: Component#5 5
+    2300174: Component#5 6
+    2300176: Component#5 7
+    2300178: Component#5 8
+    2300180: Component#5 9
+    2300182: Component#6
+    2300184: Component#6 1
+    2300186: Component#6 2
+    2300188: Component#6 3
+    2300190: Component#7
+    2300192: Component#7 1
+    2300194: Component#8
+    2300196: Group 1
+    2300198: Group 11
+    2300200: Group 13
+    2300202: Group 15
+    2300204: Group 17
+    2300206: Group 19
+    2300208: Group 3
+    2300210: Group 5
+    2300212: Group 7
+    2300214: Group 9
+    2300216: Group 21
+    2300218: Component#10
+    2300220: Component#10 1
+    2300222: Component#9
+    2300224: Component#9 1
+    2300226: Component#9 2
+    2300228: Component#9 3
+    2300230: Component#9 4
+    2300232: Component#9 5
+    2300234: Component#9 6
+    2300236: Component#9 7
+    2300238: Component#9 8
+    2300240: Component#9 9
+    2300242: Franke Faucet
+    2300244: Group 23
+    2300246: Group 248
+    2300248: Group 25
+    2300250: Component#11
+    2300252: Component#14
+    2300254: 'Dark Teak Dining Set '
+    2300256: leg
+    2300258: leg 1
+    2300260: leg 2
+    2300262: leg 3
+    2300264: paxfocus.dwg
+    2300266: top#1
+    2300268: Mirolin Ilusa
+    3300000: Component#1
+    3300002: Component#1 1
+    3300004: Component#1 2
+    3300006: Component#1 3
+    3300008: Component#2
+    3300010: Component#2 1
+    3300012: Component#3
+    3300014: Component#4
+    3300016: Component#4 1
+    3300018: Component#4 10
+    3300020: Component#4 11
+    3300022: Component#4 12
+    3300024: Component#4 13
+    3300026: Component#4 14
+    3300028: Component#4 15
+    3300030: Component#4 16
+    3300032: Component#4 17
+    3300034: Component#4 18
+    3300036: Component#4 19
+    3300038: Component#4 2
+    3300040: Component#4 20
+    3300042: Component#4 21
+    3300044: Component#4 22
+    3300046: Component#4 23
+    3300048: Component#4 24
+    3300050: Component#4 25
+    3300052: Component#4 26
+    3300054: Component#4 27
+    3300056: Component#4 28
+    3300058: Component#4 29
+    3300060: Component#4 3
+    3300062: Component#4 30
+    3300064: Component#4 31
+    3300066: Component#4 32
+    3300068: Component#4 33
+    3300070: Component#4 34
+    3300072: Component#4 35
+    3300074: Component#4 36
+    3300076: Component#4 37
+    3300078: Component#4 38
+    3300080: Component#4 39
+    3300082: Component#4 4
+    3300084: Component#4 40
+    3300086: Component#4 41
+    3300088: Component#4 5
+    3300090: Component#4 6
+    3300092: Component#4 7
+    3300094: Component#4 8
+    3300096: Component#4 9
+    3300098: Component#5
+    3300100: Component#5 1
+    3300102: Component#5 10
+    3300104: Component#5 11
+    3300106: Component#5 12
+    3300108: Component#5 13
+    3300110: Component#5 14
+    3300112: Component#5 15
+    3300114: Component#5 16
+    3300116: Component#5 17
+    3300118: Component#5 18
+    3300120: Component#5 19
+    3300122: Component#5 2
+    3300124: Component#5 20
+    3300126: Component#5 21
+    3300128: Component#5 22
+    3300130: Component#5 23
+    3300132: Component#5 24
+    3300134: Component#5 25
+    3300136: Component#5 26
+    3300138: Component#5 27
+    3300140: Component#5 28
+    3300142: Component#5 29
+    3300144: Component#5 3
+    3300146: Component#5 30
+    3300148: Component#5 31
+    3300150: Component#5 32
+    3300152: Component#5 33
+    3300154: Component#5 34
+    3300156: Component#5 35
+    3300158: Component#5 36
+    3300160: Component#5 37
+    3300162: Component#5 38
+    3300164: Component#5 39
+    3300166: Component#5 4
+    3300168: Component#5 40
+    3300170: Component#5 41
+    3300172: Component#5 5
+    3300174: Component#5 6
+    3300176: Component#5 7
+    3300178: Component#5 8
+    3300180: Component#5 9
+    3300182: Component#6
+    3300184: Component#6 1
+    3300186: Component#6 2
+    3300188: Component#6 3
+    3300190: Component#7
+    3300192: Component#7 1
+    3300194: Component#8
+    3300196: Group 1
+    3300198: Group 11
+    3300200: Group 13
+    3300202: Group 15
+    3300204: Group 17
+    3300206: Group 19
+    3300208: Group 3
+    3300210: Group 5
+    3300212: Group 7
+    3300214: Group 9
+    3300216: Group 21
+    3300218: Component#10
+    3300220: Component#10 1
+    3300222: Component#9
+    3300224: Component#9 1
+    3300226: Component#9 2
+    3300228: Component#9 3
+    3300230: Component#9 4
+    3300232: Component#9 5
+    3300234: Component#9 6
+    3300236: Component#9 7
+    3300238: Component#9 8
+    3300240: Component#9 9
+    3300242: Franke Faucet
+    3300244: Group 23
+    3300246: Group 248
+    3300248: Group 25
+    3300250: Component#11
+    3300252: Component#14
+    3300254: 'Dark Teak Dining Set '
+    3300256: leg
+    3300258: leg 1
+    3300260: leg 2
+    3300262: leg 3
+    3300264: paxfocus.dwg
+    3300266: top#1
+    3300268: Mirolin Ilusa
+    4300000: Mesh Group 1
+    4300002: Mesh Group 3
+    4300004: Mesh Group 5
+    4300006: Mesh Group 7
+    4300008: Mesh Group 9
+    4300010: Mesh Group 11
+    4300012: Mesh Group 13
+    4300014: Mesh Group 15
+    4300016: Mesh Group 17
+    4300018: Mesh Group 19
+    4300020: Mesh Component#1
+    4300022: Mesh Component#2
+    4300024: Mesh Component#3
+    4300026: Mesh Component#4
+    4300028: Mesh Component#5
+    4300030: Mesh Component#6
+    4300032: Mesh Component#7
+    4300034: Mesh Component#8
+    4300036: Mesh Group 21
+    4300038: Mesh Group 23
+    4300040: Mesh Group 25
+    4300042: Mesh Component#9
+    4300044: Mesh Component#10
+    4300046: Mesh Group 248
+    4300048: Mesh Franke Faucet
+    4300050: Mesh Component#11
+    4300052: 'Mesh Dark Teak Dining Set '
+    4300054: Mesh leg
+    4300056: Mesh top#1
+    4300058: Mesh paxfocus.dwg
+    4300060: Mesh Component#14
+    4300062: Mesh Mirolin Ilusa
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

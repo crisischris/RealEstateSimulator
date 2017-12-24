@@ -10,6 +10,7 @@ TagManager:
   - Moon
   - Sun
   - ModelHome
+  - Helper
   layers:
   - Default
   - TransparentFX

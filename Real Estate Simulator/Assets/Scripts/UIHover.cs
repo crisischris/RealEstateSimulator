@@ -20,7 +20,7 @@ public class UIHover : MonoBehaviour
     private Vector3 scaledVector;
     private Vector3 originaScale;
 
-    public string[] targetTags = new string[] { "Home", "Sun", "Moon", "Rain", "Dawn" };
+    public string[] targetTags = new string[] { "Home", "Sun", "Moon", "Rain", "Dawn","Helper" };
 
     public RectTransform icon;
 

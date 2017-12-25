@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\MatChange.cs" />
     <Compile Include="Assets\Scripts\ModelControl.cs" />
     <Compile Include="Assets\Scripts\ObjectManager.cs" />
+    <Compile Include="Assets\Scripts\OpenButton.cs" />
     <Compile Include="Assets\Scripts\rotate.cs" />
     <Compile Include="Assets\Scripts\sceneManager.cs" />
     <Compile Include="Assets\Scripts\TileImages.cs" />
@@ -196,6 +197,8 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Palm Trees\Shaders\WavingDoublePassCullBackface.shader" />
+    <None Include="Assets\Palm Trees\Shaders\WavingDoublePassNoCullBackface.shader" />
     <None Include="Assets\Rocklynn Productions - Water Splash Pack\Read me.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />

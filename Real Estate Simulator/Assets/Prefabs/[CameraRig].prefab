@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 54039372990240644}
   m_Layer: 5
   m_Name: Moon
-  m_TagString: Moon
+  m_TagString: Night
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 54832645900309880}
   m_Layer: 5
   m_Name: Moon
-  m_TagString: Moon
+  m_TagString: Night
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 54329722449251642}
   m_Layer: 5
   m_Name: Sun
-  m_TagString: Sun
+  m_TagString: Day
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 54461093332170344}
   m_Layer: 5
   m_Name: Sun
-  m_TagString: Sun
+  m_TagString: Day
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1214,8 +1214,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1841153836448618}
-  m_LocalRotation: {x: -0, y: 0.6411201, z: -0, w: 0.7674406}
-  m_LocalPosition: {x: -12.29674, y: 0, z: -5.1919794}
+  m_LocalRotation: {x: -0, y: 0.70710695, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 3.54, y: 4, z: -9.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4237634674282434}
@@ -1229,7 +1229,7 @@ Transform:
   - {fileID: 4417405677630628}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 79.75101, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &4295015243753202
 Transform:
   m_ObjectHideFlags: 1
@@ -1779,8 +1779,11 @@ MonoBehaviour:
   trackedObj: {fileID: 0}
   helperMenuOn: 0
   helperMenuParent: {fileID: 1698505309773014}
+  nightBox: {fileID: 0}
+  dayBox: {fileID: 0}
   laserHand: 0
   menuIsActive: 0
+  sun: {fileID: 0}
   playerHead: {fileID: 1629304070603676}
   uiMenu: {fileID: 1425346247555952}
   controllerMesh: {fileID: 1570070348467158}
@@ -2477,8 +2480,11 @@ MonoBehaviour:
   trackedObj: {fileID: 0}
   helperMenuOn: 0
   helperMenuParent: {fileID: 1698505309773014}
+  nightBox: {fileID: 0}
+  dayBox: {fileID: 0}
   laserHand: 1
   menuIsActive: 0
+  sun: {fileID: 0}
   playerHead: {fileID: 1629304070603676}
   uiMenu: {fileID: 1166292322308280}
   controllerMesh: {fileID: 1462930671401842}

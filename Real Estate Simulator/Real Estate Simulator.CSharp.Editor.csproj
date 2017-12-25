@@ -146,6 +146,8 @@
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Palm Trees\Shaders\WavingDoublePassCullBackface.shader" />
+    <None Include="Assets\Palm Trees\Shaders\WavingDoublePassNoCullBackface.shader" />
     <None Include="Assets\Rocklynn Productions - Water Splash Pack\Read me.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e9540adb7109785489f25eb63c198f2d
-timeCreated: 1514054413
+timeCreated: 1514159201
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -93,7 +93,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: luminosity
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0.478
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -163,7 +163,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: scratches
       value:
-        scalar[0]: 0
+        scalar[0]: 0.07
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -250,7 +250,7 @@ SubstanceImporter:
       texEnvs:
       - _BumpMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 0.009}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _DetailAlbedoMap:
           texture: {instanceID: 0}
@@ -274,15 +274,15 @@ SubstanceImporter:
           offset: {x: 0, y: 0}
       - _MetallicGlossMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 0.009}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _OcclusionMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 0.009}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _ParallaxMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 0.009}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       floats:
       - _BumpScale: 1
@@ -295,7 +295,7 @@ SubstanceImporter:
       - _Metallic: 0
       - _Mode: 0
       - _OcclusionStrength: 1
-      - _Parallax: 0.02
+      - _Parallax: 0.08
       - _SmoothnessTextureChannel: 0
       - _SpecularHighlights: 1
       - _SrcBlend: 1

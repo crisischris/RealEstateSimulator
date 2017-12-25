@@ -18,10 +18,13 @@ public class HandController : MonoBehaviour
 
     public GameObject helperMenuParent;
 
-
+    public Material nightBox;
+    public Material dayBox;
 
     public bool laserHand;
     public bool menuIsActive = false;
+
+    public GameObject sun;
 
     
 
@@ -97,7 +100,7 @@ public class HandController : MonoBehaviour
 
 
 
-        // Debug.Log(currentObjectBeingHit);
+         Debug.Log(currentObjectBeingHit);
 
 
         //assign Vars
@@ -366,7 +369,7 @@ public class HandController : MonoBehaviour
         }
     }
 
-    void OnTriggerStay(Collider col)
+    public void OnTriggerStay(Collider col)
     {
         if (col.gameObject.CompareTag("Home"))
         {
@@ -374,6 +377,28 @@ public class HandController : MonoBehaviour
             {
                 device.TriggerHapticPulse(3000);
                 SteamVR_LoadLevel.Begin(scene, false, 2);
+            }
+        }
+
+        if (col.gameObject.CompareTag("Night"))
+        {
+            if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+            {
+                device.TriggerHapticPulse(3000);
+                
+                RenderSettings.skybox = nightBox;
+                sun.SetActive(false);
+
+            }
+        }
+
+        if (col.gameObject.CompareTag("Day"))
+        {
+            if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+            {
+                device.TriggerHapticPulse(3000);
+                RenderSettings.skybox = dayBox;
+                sun.SetActive(true);
             }
         }
 
@@ -408,14 +433,17 @@ public class HandController : MonoBehaviour
                 }
             }
         }
+
+
     }
 
-    void OnTriggerEnter(Collider col)
+    public void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag.Contains("Model"))
         {
             device.TriggerHapticPulse(1000);
         }
+
     }
 
     void grabObjectModel(Collider col)

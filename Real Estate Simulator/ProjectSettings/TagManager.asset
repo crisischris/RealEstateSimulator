@@ -11,6 +11,9 @@ TagManager:
   - Sun
   - ModelHome
   - Helper
+  - OpenButton
+  - Day
+  - Night
   layers:
   - Default
   - TransparentFX

@@ -146,9 +146,8 @@
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Palm Trees\Shaders\WavingDoublePassCullBackface.shader" />
-    <None Include="Assets\Palm Trees\Shaders\WavingDoublePassNoCullBackface.shader" />
-    <None Include="Assets\Rocklynn Productions - Water Splash Pack\Read me.txt" />
+    <None Include="Assets\Model\Palm Trees\Shaders\WavingDoublePassCullBackface.shader" />
+    <None Include="Assets\Model\Palm Trees\Shaders\WavingDoublePassNoCullBackface.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
@@ -160,6 +159,7 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
+    <None Include="Assets\audio\Rocklynn Productions - Water Splash Pack\Read me.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

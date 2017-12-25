@@ -1,0 +1,770 @@
+fileFormatVersion: 2
+guid: fcb41ab4acbfd764a8968c5b83043ba6
+timeCreated: 1514182105
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000
+  assetHash:
+    serializedVersion: 2
+    Hash: 83f1e3286983c2b87cb54eb2ccf264fe
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -1.2383757, y: 2.395234, z: 5.177842}
+      lookAt: {x: 24.122602, y: -5.188843, z: 27.549757}
+      up: {x: 0.16409996, y: 0.97576433, z: 0.14475903}
+      fov: 55
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Component
+    100004: Component#1
+    100006: Component#1 1
+    100008: Component#1 2
+    100010: Component#1 3
+    100012: Component#10
+    100014: Component#10 1
+    100016: Component#11
+    100018: Component#11 1
+    100020: Component#11 10
+    100022: Component#11 11
+    100024: Component#11 12
+    100026: Component#11 2
+    100028: Component#11 3
+    100030: Component#11 4
+    100032: Component#11 5
+    100034: Component#11 6
+    100036: Component#11 7
+    100038: Component#11 8
+    100040: Component#11 9
+    100042: Component#16
+    100044: Component#2
+    100046: Component#2 1
+    100048: Component#2 10
+    100050: Component#2 11
+    100052: Component#2 2
+    100054: Component#2 3
+    100056: Component#2 4
+    100058: Component#2 5
+    100060: Component#2 6
+    100062: Component#2 7
+    100064: Component#2 8
+    100066: Component#2 9
+    100068: Component#3
+    100070: Component#3 1
+    100072: Component#4
+    100074: Component#4 1
+    100076: Component#4 2
+    100078: Component#4 3
+    100080: Component#4 4
+    100082: Component#4 5
+    100084: Component#5
+    100086: Component#6
+    100088: Component#7
+    100090: Component#7 1
+    100092: Component#7 2
+    100094: Component#7 3
+    100096: Component#8
+    100098: Component#8 1
+    100100: Component#9
+    100102: Component#9 1
+    100104: Component#9 2
+    100106: Component#9 3
+    100108: Component#9 4
+    100110: Component#9 5
+    100112: Franke Faucet
+    100114: Group 1
+    100116: Group 10
+    100118: Group 100
+    100120: Group 102
+    100122: Group 104
+    100124: Group 106
+    100126: Group 108
+    100128: Group 110
+    100130: Group 112
+    100132: Group 114
+    100134: Group 116
+    100136: Group 118
+    100138: Group 12
+    100140: Group 120
+    100142: Group 122
+    100144: Group 124
+    100146: Group 126
+    100148: Group 128
+    100150: Group 130
+    100152: Group 132
+    100154: Group 134
+    100156: Group 136
+    100158: Group 138
+    100160: Group 14
+    100162: Group 140
+    100164: Group 142
+    100166: Group 144
+    100168: Group 146
+    100170: Group 148
+    100172: Group 150
+    100174: Group 152
+    100176: Group 154
+    100178: Group 156
+    100180: Group 158
+    100182: Group 16
+    100184: Group 160
+    100186: Group 162
+    100188: Group 164
+    100190: Group 166
+    100192: Group 168
+    100194: Group 170
+    100196: Group 172
+    100198: Group 174
+    100200: Group 18
+    100202: Group 187
+    100204: Group 189
+    100206: Group 190
+    100208: Group 192
+    100210: Group 20
+    100212: Group 206
+    100214: Group 208
+    100216: Group 210
+    100218: Group 212
+    100220: Group 214
+    100222: Group 216
+    100224: Group 218
+    100226: Group 22
+    100228: Group 220
+    100230: Group 222
+    100232: Group 224
+    100234: Group 226
+    100236: Group 228
+    100238: Group 24
+    100240: Group 258
+    100242: Group 26
+    100244: Group 28
+    100246: Group 3
+    100248: Group 30
+    100250: Group 32
+    100252: Group 34
+    100254: Group 36
+    100256: Group 38
+    100258: Group 40
+    100260: Group 42
+    100262: Group 44
+    100264: Group 46
+    100266: Group 48
+    100268: Group 5
+    100270: Group 7
+    100272: Group 8
+    100274: Group 82
+    100276: Group 84
+    100278: Group 86
+    100280: Group 88
+    100282: Group 90
+    100284: Group 92
+    100286: Group 94
+    100288: Group 96
+    100290: Group 98
+    100292: Mirolin Ilusa
+    100294: Component#12
+    100296: Component#12 1
+    100298: Component#12 2
+    100300: Component#12 3
+    100302: Component#12 4
+    100304: Component#12 5
+    100306: Component#14
+    100308: Component#15
+    400000: //RootNode
+    400002: Component
+    400004: Component#1
+    400006: Component#1 1
+    400008: Component#1 2
+    400010: Component#1 3
+    400012: Component#10
+    400014: Component#10 1
+    400016: Component#11
+    400018: Component#11 1
+    400020: Component#11 10
+    400022: Component#11 11
+    400024: Component#11 12
+    400026: Component#11 2
+    400028: Component#11 3
+    400030: Component#11 4
+    400032: Component#11 5
+    400034: Component#11 6
+    400036: Component#11 7
+    400038: Component#11 8
+    400040: Component#11 9
+    400042: Component#16
+    400044: Component#2
+    400046: Component#2 1
+    400048: Component#2 10
+    400050: Component#2 11
+    400052: Component#2 2
+    400054: Component#2 3
+    400056: Component#2 4
+    400058: Component#2 5
+    400060: Component#2 6
+    400062: Component#2 7
+    400064: Component#2 8
+    400066: Component#2 9
+    400068: Component#3
+    400070: Component#3 1
+    400072: Component#4
+    400074: Component#4 1
+    400076: Component#4 2
+    400078: Component#4 3
+    400080: Component#4 4
+    400082: Component#4 5
+    400084: Component#5
+    400086: Component#6
+    400088: Component#7
+    400090: Component#7 1
+    400092: Component#7 2
+    400094: Component#7 3
+    400096: Component#8
+    400098: Component#8 1
+    400100: Component#9
+    400102: Component#9 1
+    400104: Component#9 2
+    400106: Component#9 3
+    400108: Component#9 4
+    400110: Component#9 5
+    400112: Franke Faucet
+    400114: Group 1
+    400116: Group 10
+    400118: Group 100
+    400120: Group 102
+    400122: Group 104
+    400124: Group 106
+    400126: Group 108
+    400128: Group 110
+    400130: Group 112
+    400132: Group 114
+    400134: Group 116
+    400136: Group 118
+    400138: Group 12
+    400140: Group 120
+    400142: Group 122
+    400144: Group 124
+    400146: Group 126
+    400148: Group 128
+    400150: Group 130
+    400152: Group 132
+    400154: Group 134
+    400156: Group 136
+    400158: Group 138
+    400160: Group 14
+    400162: Group 140
+    400164: Group 142
+    400166: Group 144
+    400168: Group 146
+    400170: Group 148
+    400172: Group 150
+    400174: Group 152
+    400176: Group 154
+    400178: Group 156
+    400180: Group 158
+    400182: Group 16
+    400184: Group 160
+    400186: Group 162
+    400188: Group 164
+    400190: Group 166
+    400192: Group 168
+    400194: Group 170
+    400196: Group 172
+    400198: Group 174
+    400200: Group 18
+    400202: Group 187
+    400204: Group 189
+    400206: Group 190
+    400208: Group 192
+    400210: Group 20
+    400212: Group 206
+    400214: Group 208
+    400216: Group 210
+    400218: Group 212
+    400220: Group 214
+    400222: Group 216
+    400224: Group 218
+    400226: Group 22
+    400228: Group 220
+    400230: Group 222
+    400232: Group 224
+    400234: Group 226
+    400236: Group 228
+    400238: Group 24
+    400240: Group 258
+    400242: Group 26
+    400244: Group 28
+    400246: Group 3
+    400248: Group 30
+    400250: Group 32
+    400252: Group 34
+    400254: Group 36
+    400256: Group 38
+    400258: Group 40
+    400260: Group 42
+    400262: Group 44
+    400264: Group 46
+    400266: Group 48
+    400268: Group 5
+    400270: Group 7
+    400272: Group 8
+    400274: Group 82
+    400276: Group 84
+    400278: Group 86
+    400280: Group 88
+    400282: Group 90
+    400284: Group 92
+    400286: Group 94
+    400288: Group 96
+    400290: Group 98
+    400292: Mirolin Ilusa
+    400294: Component#12
+    400296: Component#12 1
+    400298: Component#12 2
+    400300: Component#12 3
+    400302: Component#12 4
+    400304: Component#12 5
+    400306: Component#14
+    400308: Component#15
+    2300000: Component#1
+    2300002: Component#1 1
+    2300004: Component#1 2
+    2300006: Component#1 3
+    2300008: Component#10
+    2300010: Component#10 1
+    2300012: Component#11
+    2300014: Component#11 1
+    2300016: Component#11 10
+    2300018: Component#11 11
+    2300020: Component#11 12
+    2300022: Component#11 2
+    2300024: Component#11 3
+    2300026: Component#11 4
+    2300028: Component#11 5
+    2300030: Component#11 6
+    2300032: Component#11 7
+    2300034: Component#11 8
+    2300036: Component#11 9
+    2300038: Component#2
+    2300040: Component#2 1
+    2300042: Component#2 10
+    2300044: Component#2 11
+    2300046: Component#2 2
+    2300048: Component#2 3
+    2300050: Component#2 4
+    2300052: Component#2 5
+    2300054: Component#2 6
+    2300056: Component#2 7
+    2300058: Component#2 8
+    2300060: Component#2 9
+    2300062: Component#3
+    2300064: Component#3 1
+    2300066: Component#4
+    2300068: Component#4 1
+    2300070: Component#4 2
+    2300072: Component#4 3
+    2300074: Component#4 4
+    2300076: Component#4 5
+    2300078: Component#5
+    2300080: Component#6
+    2300082: Component#7
+    2300084: Component#7 1
+    2300086: Component#7 2
+    2300088: Component#7 3
+    2300090: Component#8
+    2300092: Component#8 1
+    2300094: Component#9
+    2300096: Component#9 1
+    2300098: Component#9 2
+    2300100: Component#9 3
+    2300102: Component#9 4
+    2300104: Component#9 5
+    2300106: Franke Faucet
+    2300108: Group 1
+    2300110: Group 10
+    2300112: Group 100
+    2300114: Group 102
+    2300116: Group 104
+    2300118: Group 106
+    2300120: Group 108
+    2300122: Group 110
+    2300124: Group 112
+    2300126: Group 114
+    2300128: Group 116
+    2300130: Group 118
+    2300132: Group 12
+    2300134: Group 120
+    2300136: Group 122
+    2300138: Group 124
+    2300140: Group 126
+    2300142: Group 128
+    2300144: Group 130
+    2300146: Group 132
+    2300148: Group 134
+    2300150: Group 136
+    2300152: Group 138
+    2300154: Group 14
+    2300156: Group 140
+    2300158: Group 142
+    2300160: Group 144
+    2300162: Group 146
+    2300164: Group 148
+    2300166: Group 150
+    2300168: Group 152
+    2300170: Group 154
+    2300172: Group 156
+    2300174: Group 158
+    2300176: Group 16
+    2300178: Group 160
+    2300180: Group 162
+    2300182: Group 164
+    2300184: Group 166
+    2300186: Group 168
+    2300188: Group 170
+    2300190: Group 172
+    2300192: Group 18
+    2300194: Group 187
+    2300196: Group 190
+    2300198: Group 192
+    2300200: Group 20
+    2300202: Group 206
+    2300204: Group 208
+    2300206: Group 210
+    2300208: Group 212
+    2300210: Group 214
+    2300212: Group 216
+    2300214: Group 218
+    2300216: Group 22
+    2300218: Group 220
+    2300220: Group 222
+    2300222: Group 224
+    2300224: Group 226
+    2300226: Group 228
+    2300228: Group 24
+    2300230: Group 258
+    2300232: Group 26
+    2300234: Group 28
+    2300236: Group 3
+    2300238: Group 30
+    2300240: Group 32
+    2300242: Group 34
+    2300244: Group 36
+    2300246: Group 38
+    2300248: Group 40
+    2300250: Group 42
+    2300252: Group 44
+    2300254: Group 46
+    2300256: Group 48
+    2300258: Group 5
+    2300260: Group 8
+    2300262: Group 82
+    2300264: Group 84
+    2300266: Group 86
+    2300268: Group 88
+    2300270: Group 90
+    2300272: Group 92
+    2300274: Group 94
+    2300276: Group 96
+    2300278: Group 98
+    2300280: Mirolin Ilusa
+    2300282: Component#12
+    2300284: Component#12 1
+    2300286: Component#12 2
+    2300288: Component#12 3
+    2300290: Component#12 4
+    2300292: Component#12 5
+    2300294: Component#14
+    2300296: Component#15
+    3300000: Component#1
+    3300002: Component#1 1
+    3300004: Component#1 2
+    3300006: Component#1 3
+    3300008: Component#10
+    3300010: Component#10 1
+    3300012: Component#11
+    3300014: Component#11 1
+    3300016: Component#11 10
+    3300018: Component#11 11
+    3300020: Component#11 12
+    3300022: Component#11 2
+    3300024: Component#11 3
+    3300026: Component#11 4
+    3300028: Component#11 5
+    3300030: Component#11 6
+    3300032: Component#11 7
+    3300034: Component#11 8
+    3300036: Component#11 9
+    3300038: Component#2
+    3300040: Component#2 1
+    3300042: Component#2 10
+    3300044: Component#2 11
+    3300046: Component#2 2
+    3300048: Component#2 3
+    3300050: Component#2 4
+    3300052: Component#2 5
+    3300054: Component#2 6
+    3300056: Component#2 7
+    3300058: Component#2 8
+    3300060: Component#2 9
+    3300062: Component#3
+    3300064: Component#3 1
+    3300066: Component#4
+    3300068: Component#4 1
+    3300070: Component#4 2
+    3300072: Component#4 3
+    3300074: Component#4 4
+    3300076: Component#4 5
+    3300078: Component#5
+    3300080: Component#6
+    3300082: Component#7
+    3300084: Component#7 1
+    3300086: Component#7 2
+    3300088: Component#7 3
+    3300090: Component#8
+    3300092: Component#8 1
+    3300094: Component#9
+    3300096: Component#9 1
+    3300098: Component#9 2
+    3300100: Component#9 3
+    3300102: Component#9 4
+    3300104: Component#9 5
+    3300106: Franke Faucet
+    3300108: Group 1
+    3300110: Group 10
+    3300112: Group 100
+    3300114: Group 102
+    3300116: Group 104
+    3300118: Group 106
+    3300120: Group 108
+    3300122: Group 110
+    3300124: Group 112
+    3300126: Group 114
+    3300128: Group 116
+    3300130: Group 118
+    3300132: Group 12
+    3300134: Group 120
+    3300136: Group 122
+    3300138: Group 124
+    3300140: Group 126
+    3300142: Group 128
+    3300144: Group 130
+    3300146: Group 132
+    3300148: Group 134
+    3300150: Group 136
+    3300152: Group 138
+    3300154: Group 14
+    3300156: Group 140
+    3300158: Group 142
+    3300160: Group 144
+    3300162: Group 146
+    3300164: Group 148
+    3300166: Group 150
+    3300168: Group 152
+    3300170: Group 154
+    3300172: Group 156
+    3300174: Group 158
+    3300176: Group 16
+    3300178: Group 160
+    3300180: Group 162
+    3300182: Group 164
+    3300184: Group 166
+    3300186: Group 168
+    3300188: Group 170
+    3300190: Group 172
+    3300192: Group 18
+    3300194: Group 187
+    3300196: Group 190
+    3300198: Group 192
+    3300200: Group 20
+    3300202: Group 206
+    3300204: Group 208
+    3300206: Group 210
+    3300208: Group 212
+    3300210: Group 214
+    3300212: Group 216
+    3300214: Group 218
+    3300216: Group 22
+    3300218: Group 220
+    3300220: Group 222
+    3300222: Group 224
+    3300224: Group 226
+    3300226: Group 228
+    3300228: Group 24
+    3300230: Group 258
+    3300232: Group 26
+    3300234: Group 28
+    3300236: Group 3
+    3300238: Group 30
+    3300240: Group 32
+    3300242: Group 34
+    3300244: Group 36
+    3300246: Group 38
+    3300248: Group 40
+    3300250: Group 42
+    3300252: Group 44
+    3300254: Group 46
+    3300256: Group 48
+    3300258: Group 5
+    3300260: Group 8
+    3300262: Group 82
+    3300264: Group 84
+    3300266: Group 86
+    3300268: Group 88
+    3300270: Group 90
+    3300272: Group 92
+    3300274: Group 94
+    3300276: Group 96
+    3300278: Group 98
+    3300280: Mirolin Ilusa
+    3300282: Component#12
+    3300284: Component#12 1
+    3300286: Component#12 2
+    3300288: Component#12 3
+    3300290: Component#12 4
+    3300292: Component#12 5
+    3300294: Component#14
+    3300296: Component#15
+    4300000: Mesh Group 1
+    4300002: Mesh Group 3
+    4300004: Mesh Group 5
+    4300006: Mesh Group 8
+    4300008: Mesh Group 10
+    4300010: Mesh Group 14
+    4300012: Mesh Group 20
+    4300014: Mesh Group 28
+    4300016: Mesh Group 30
+    4300018: Mesh Group 44
+    4300020: Mesh Group 46
+    4300022: Mesh Group 48
+    4300024: Mesh Component#2
+    4300026: Mesh Component#1
+    4300028: Mesh Group 82
+    4300030: Mesh Group 84
+    4300032: Mesh Group 116
+    4300034: Mesh Group 118
+    4300036: Mesh Group 132
+    4300038: Mesh Group 134
+    4300040: Mesh Group 136
+    4300042: Mesh Group 138
+    4300044: Mesh Group 142
+    4300046: Mesh Group 154
+    4300048: Mesh Group 156
+    4300050: Mesh Group 158
+    4300052: Mesh Group 164
+    4300054: Mesh Group 166
+    4300056: Mesh Group 168
+    4300058: Mesh Group 170
+    4300060: Mesh Group 172
+    4300062: Mesh Component#4
+    4300064: Mesh Group 187
+    4300066: Mesh Group 192
+    4300068: Mesh Component#9
+    4300070: Mesh Group 206
+    4300072: Mesh Group 208
+    4300074: Mesh Group 210
+    4300076: Mesh Group 212
+    4300078: Mesh Group 214
+    4300080: Mesh Group 216
+    4300082: Mesh Group 218
+    4300084: Mesh Group 220
+    4300086: Mesh Group 222
+    4300088: Mesh Group 224
+    4300090: Mesh Group 226
+    4300092: Mesh Group 228
+    4300094: Mesh Component#3
+    4300096: Mesh Component#5
+    4300098: Mesh Component#6
+    4300100: Mesh Component#8
+    4300102: Mesh Component#7
+    4300104: Mesh Component#11
+    4300106: Mesh Mirolin Ilusa
+    4300108: Mesh Group 258
+    4300110: Mesh Component#10
+    4300112: Mesh Franke Faucet
+    4300114: Mesh Component#12
+    4300116: Mesh Component#14
+    4300118: Mesh Component#15
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

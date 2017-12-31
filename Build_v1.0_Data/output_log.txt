@@ -1,0 +1,88 @@
+Initialize engine version: 2017.1.0p4 (892c0f8d8f8a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   NVIDIA
+    VRAM:     2997 MB
+    Driver:   23.21.13.8813
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\Documents\Chris\GitHub\RealEstateSimulator\Build_v1.0_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.029 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+OpenVR initialized!
+ 
+(Filename:  Line: 584)
+
+UnloadTime: 0.521607 ms
+Connected to lighthouse:LHR-FC66EBD3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ChaperoneInfo initialized. Roomscale play area 2.60m x 1.60m
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 6 worker threads for Enlighten.
+  Thread -> id: 199c -> priority: 1 
+  Thread -> id: 59b8 -> priority: 1 
+  Thread -> id: 5d20 -> priority: 1 
+  Thread -> id: 24c4 -> priority: 1 
+  Thread -> id: 2a08 -> priority: 1 
+  Thread -> id: 13a8 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.357389 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 1.175615 ms (FindLiveObjects: 0.202758 ms CreateObjectMapping: 0.063002 ms MarkObjects: 0.881072 ms  DeleteObjects: 0.027503 ms)
+
+Shader warmup: 36 shaders 4229 combinations 1.024s
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.570980 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 321 unused Assets to reduce memory usage. Loaded Objects now: 3209.
+Total: 4.400883 ms (FindLiveObjects: 0.296782 ms CreateObjectMapping: 0.082510 ms MarkObjects: 1.085109 ms  DeleteObjects: 2.935521 ms)
+
+Shader warmup: 48 shaders 5773 combinations 0.418s
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.348673 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 564 unused Assets to reduce memory usage. Loaded Objects now: 3881.
+Total: 27.433486 ms (FindLiveObjects: 0.337078 ms CreateObjectMapping: 0.109374 ms MarkObjects: 0.935119 ms  DeleteObjects: 26.050954 ms)
+
+Shader warmup: 36 shaders 4229 combinations 0.095s
+OpenVR Shutdown
+ 
+(Filename:  Line: 1253)
+

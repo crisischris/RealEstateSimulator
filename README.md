@@ -4,6 +4,8 @@
 Using: Unity 2017.1.0p4
 Using: SteamVR plugin for Unity - v1.2.2
 
+
+YouTube video displaying my app here - https://youtu.be/bx_zbb91FCE
 Pre-Production and Scope Reduction document in Main Directory named "Udacity Capstone Document"
 
 Achievemnts:

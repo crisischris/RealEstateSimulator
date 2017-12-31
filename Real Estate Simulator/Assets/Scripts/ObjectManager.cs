@@ -9,11 +9,14 @@ public class ObjectManager : MonoBehaviour
     public float remappedX;
     public float remappedY;
 
-   
+
 
     public GameObject model1;
     public GameObject model2;
     public GameObject model3;
+    public GameObject selectHomeText;
+
+
 
 
     public GameObject eyes;
@@ -68,7 +71,7 @@ public class ObjectManager : MonoBehaviour
         //assign vars
         modelStartPos = model1.GetComponent<ModelControl>().startPos;
 
-      
+
         //if (currentScene.ToString != "HomeSpace")
         //{
         //
@@ -124,26 +127,32 @@ public class ObjectManager : MonoBehaviour
     //-------------------------------------------------------------------------
 
 
-        
+
     public void enableModel1()
     {
+        selectHomeText.SetActive(false);
         model1.SetActive(true);
         model2.SetActive(false);
         model3.SetActive(false);
+
     }
 
     public void enableModel2()
     {
+        selectHomeText.SetActive(false);
         model1.SetActive(false);
         model2.SetActive(true);
         model3.SetActive(false);
+
     }
 
     public void enableModel3()
     {
+        selectHomeText.SetActive(false);
         model1.SetActive(false);
         model2.SetActive(false);
         model3.SetActive(true);
+
     }
 
     public void LargeMode1()
@@ -176,6 +185,12 @@ public class ObjectManager : MonoBehaviour
     }
     public void BackToTileMode()
     {
+        selectHomeText.SetActive(true);
+        model1.SetActive(false);
+        model2.SetActive(false);
+        model3.SetActive(false);
+
+
         billboard1.SetActive(true);
         billboard2.SetActive(true);
         billboard3.SetActive(true);

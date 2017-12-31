@@ -99,7 +99,7 @@ public class ModelControl : MonoBehaviour
                 }
             }
 
-            if (currentPos == startPos)
+            if (currentPos.y == startPos.y)
             {
                 beingMoved = false;
             }

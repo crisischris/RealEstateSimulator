@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HelperMenuManager : MonoBehaviour {
+public class HelperMenuManager : MonoBehaviour
+{
 
     public bool helperMenuIsOff = false;
     public int helperMenuInt;
@@ -11,19 +12,27 @@ public class HelperMenuManager : MonoBehaviour {
     public GameObject helperMenuParent;
     public List<GameObject> helperMenuText;
     public int currentMenuPlace = 0;
+    public int IntroCounter = 0;
 
     public GameObject controller1;
     public GameObject controller2;
 
+    public GameObject audioManager;
+    public AudioSource[] sources;
+
+
+
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     //-------------------------------------------------------------------------
     //                        HELPER MENU FUNCTIONALITY 
@@ -33,6 +42,7 @@ public class HelperMenuManager : MonoBehaviour {
 
     public void helperMenuRight()
     {
+        sources[0].Play();
         helperMenuText[currentMenuPlace].SetActive(false);
         currentMenuPlace++;
 
@@ -42,16 +52,17 @@ public class HelperMenuManager : MonoBehaviour {
             controller1.GetComponent<HandController>().helperMenuOn = false;
             controller2.GetComponent<HandController>().helperMenuOn = false;
             currentMenuPlace = 0;
+            IntroCounter = 1;
         }
 
         else
 
             helperMenuText[currentMenuPlace].SetActive(true);
-
     }
 
     public void helperMenuLeft()
     {
+        sources[0].Play();
         helperMenuText[currentMenuPlace].SetActive(false);
         currentMenuPlace--;
         if (currentMenuPlace < 0)

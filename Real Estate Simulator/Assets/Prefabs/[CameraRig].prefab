@@ -269,6 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4237634674282434}
   - component: {fileID: 114627431909487702}
+  - component: {fileID: 82203790146395666}
   m_Layer: 0
   m_Name: HelperMenuManager
   m_TagString: Untagged
@@ -384,7 +385,8 @@ GameObject:
   - component: {fileID: 4521976415895756}
   - component: {fileID: 20625170191761820}
   - component: {fileID: 124180651440835512}
-  - component: {fileID: 114355075632094528}
+  - component: {fileID: 114639265701484490}
+  - component: {fileID: 114766744046086050}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -1214,8 +1216,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1841153836448618}
-  m_LocalRotation: {x: -0, y: 0.70710695, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 3.54, y: 4, z: -9.01}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4237634674282434}
@@ -1229,7 +1231,7 @@ Transform:
   - {fileID: 4417405677630628}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4295015243753202
 Transform:
   m_ObjectHideFlags: 1
@@ -1676,6 +1678,86 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1847255967079388}
   m_Enabled: 1
+--- !u!82 &82203790146395666
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1286166662933826}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e5d0f30bc9cc1e84f90c5d1251eba7ff, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!92 &92834875752556446
 Behaviour:
   m_ObjectHideFlags: 1
@@ -1695,7 +1777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1717,7 +1799,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: We just have to go over a few things.  First, Holding down the "GRIP" button
     will pop up your menu.  Using your other hand. hovering over and clicking on an
-    Icon with TRIGGER will activate it.
+    icon with TRIGGER will activate it.
 --- !u!114 &114062727254131990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1730,7 +1812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1779,8 +1861,8 @@ MonoBehaviour:
   trackedObj: {fileID: 0}
   helperMenuOn: 0
   helperMenuParent: {fileID: 1698505309773014}
-  nightBox: {fileID: 0}
-  dayBox: {fileID: 0}
+  nightBox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  dayBox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   laserHand: 0
   menuIsActive: 0
   sun: {fileID: 0}
@@ -1788,8 +1870,9 @@ MonoBehaviour:
   uiMenu: {fileID: 1425346247555952}
   controllerMesh: {fileID: 1570070348467158}
   controllerPrefab: {fileID: 1401678261394966}
+  nightSound: {fileID: 0}
+  daySound: {fileID: 0}
   currentObjectBeingHit: {fileID: 0}
-  scene: HomeSpace
   currentObjectBeingHitScale: {x: 0, y: 0, z: 0}
   currentObjectBeingHitScaleHover: {x: 0, y: 0, z: 0}
   lr: {fileID: 0}
@@ -1830,7 +1913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1965,7 +2048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1998,7 +2081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2052,7 +2135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2139,7 +2222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2183,20 +2266,6 @@ MonoBehaviour:
   - Rain
   - Dawn
   icon: {fileID: 224622537903867292}
---- !u!114 &114355075632094528
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1353209001468154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4422655841983786}
-  _ears: {fileID: 4680324731686396}
-  wireframe: 0
 --- !u!114 &114361554109975412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2244,7 +2313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2300,7 +2369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2333,7 +2402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 0.392}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2383,7 +2452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2443,7 +2512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2480,8 +2549,8 @@ MonoBehaviour:
   trackedObj: {fileID: 0}
   helperMenuOn: 0
   helperMenuParent: {fileID: 1698505309773014}
-  nightBox: {fileID: 0}
-  dayBox: {fileID: 0}
+  nightBox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  dayBox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   laserHand: 1
   menuIsActive: 0
   sun: {fileID: 0}
@@ -2489,8 +2558,9 @@ MonoBehaviour:
   uiMenu: {fileID: 1166292322308280}
   controllerMesh: {fileID: 1462930671401842}
   controllerPrefab: {fileID: 1928048009189526}
+  nightSound: {fileID: 0}
+  daySound: {fileID: 0}
   currentObjectBeingHit: {fileID: 0}
-  scene: HomeSpace
   currentObjectBeingHitScale: {x: 0, y: 0, z: 0}
   currentObjectBeingHitScaleHover: {x: 0, y: 0, z: 0}
   lr: {fileID: 120940179470551234}
@@ -2516,7 +2586,7 @@ MonoBehaviour:
   laserForceOff: 0
   clickMask:
   - serializedVersion: 2
-    m_Bits: 1792
+    m_Bits: 3840
   currentLaserMaskBeingHit:
     serializedVersion: 2
     m_Bits: 0
@@ -2581,7 +2651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 0.392}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2634,7 +2704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2667,7 +2737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 0.392}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2694,7 +2764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 0.392}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2767,7 +2837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2787,9 +2857,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: When you want to explore a house, go ahead and grab it off the pedistal
-    by holding down the TRIGGER button.  Once it is grabbed, bring it slowly to closer
-    to your head an poof!
+  m_Text: When you want to explore a house, go ahead and grab it off the pedestal
+    by holding down the TRIGGER button.  Once it is grabbed, bring it slowly to your
+    head an poof!
 --- !u!114 &114578816633797592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2802,7 +2872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2835,7 +2905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2879,8 +2949,12 @@ MonoBehaviour:
   - {fileID: 1656843096827010}
   - {fileID: 1535045062279114}
   currentMenuPlace: 0
+  IntroCounter: 0
   controller1: {fileID: 1401678261394966}
   controller2: {fileID: 1928048009189526}
+  audioManager: {fileID: 0}
+  sources:
+  - {fileID: 82203790146395666}
 --- !u!114 &114635045407022074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2893,7 +2967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2926,7 +3000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2947,6 +3021,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: CLICK TRIGGER TO ADVANCE
+--- !u!114 &114639265701484490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353209001468154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 729e5a12a4bf39a4383e3bc098f6258d, type: 2}
 --- !u!114 &114661339732578728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3131,7 +3217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3179,7 +3265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3212,7 +3298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 0.392}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3239,7 +3325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3272,7 +3358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3294,6 +3380,20 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Hello!  we are glad you decided to step into your first Virtual Real Estate
     Experience!
+--- !u!114 &114766744046086050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353209001468154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4422655841983786}
+  _ears: {fileID: 4680324731686396}
+  wireframe: 0
 --- !u!114 &114768441619122268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3366,7 +3466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3387,7 +3487,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: click using the TRIGGER to get a more detailed view of the home.  From there,
-    look to your left to see more photos, or to the front to see an acurate scale
+    look to your left to see more photos, or to the front to see an accurate scale
     3D model.
 --- !u!114 &114821259018194462
 MonoBehaviour:
@@ -3401,7 +3501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3421,7 +3521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Hold down the "TRACKPAD" and aim your controllor at where you want to move
+  m_Text: Hold down the "TRACKPAD" and aim your controller at where you want to move
     to.  Remember, if your cursor is red, you cannot move there.
 --- !u!114 &114843411151793366
 MonoBehaviour:
@@ -3435,7 +3535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 0.392}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3462,7 +3562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3495,7 +3595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3515,9 +3615,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: The "HomeSpace" is where you will be browsing for Homes.  Conviently, you're
-    here now!.  Point your laser hand at one of the pictures of a house you would
-    like to explore.
+  m_Text: The "HUB" is where you will be browsing for Homes.  Conveniently, you're
+    here now!  Point your laser hand at one of the pictures of a house you would like
+    to explore.
 --- !u!114 &114856449186245128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3530,7 +3630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3626,7 +3726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 0.392}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3653,7 +3753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4519,14 +4619,14 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166292322308280}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.15}
   m_LocalScale: {x: 0.0009999999, y: 0.0009999999, z: 0.0009999999}
   m_Children:
   - {fileID: 224706077346090786}
   m_Father: {fileID: 4572705599270936}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0.07499695}
@@ -4556,14 +4656,14 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425346247555952}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.15}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_Children:
   - {fileID: 224545520770004020}
   m_Father: {fileID: 4760476945314762}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0.075}

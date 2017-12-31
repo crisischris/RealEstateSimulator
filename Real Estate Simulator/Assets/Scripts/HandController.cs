@@ -26,18 +26,19 @@ public class HandController : MonoBehaviour
 
     public GameObject sun;
 
-    
-
-   
 
     public GameObject playerHead;
     public GameObject uiMenu;
     public GameObject controllerMesh;
     public GameObject controllerPrefab;
 
+    public GameObject nightSound;
+    public GameObject daySound;
+
+
     public GameObject currentObjectBeingHit;
 
-    public string scene;
+    private string scene = "HomeSpace";
 
     public Vector3 currentObjectBeingHitScale;
     public Vector3 currentObjectBeingHitScaleHover;
@@ -100,7 +101,7 @@ public class HandController : MonoBehaviour
 
 
 
-         Debug.Log(currentObjectBeingHit);
+        Debug.Log(currentObjectBeingHit);
 
 
         //assign Vars
@@ -134,6 +135,8 @@ public class HandController : MonoBehaviour
 
         if (helperMenuOn == false)
         {
+
+
             Time.timeScale = 1f;
             if (laserHand == true)
             {
@@ -158,7 +161,7 @@ public class HandController : MonoBehaviour
                                 gameObject.GetComponent<LineRenderer>().enabled = false;
 
                             }
-                            
+
                             // currentObjectBeingHitScale = currentObjectBeingHit.transform.localScale;
                             //
                             // currentObjectBeingHit.transform.localScale = hoverEnlargedScale;
@@ -242,7 +245,7 @@ public class HandController : MonoBehaviour
             uiMenu.SetActive(false);
             if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
             {
-               helperMenuManager.helperMenuRight();
+                helperMenuManager.helperMenuRight();
 
             }
 
@@ -253,56 +256,56 @@ public class HandController : MonoBehaviour
         }
 
 
-            //if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, clickMask[2]))
-            //{
-            //    currentObjectBeingHit = hit.transform.gameObject;
-            //    lr.SetPosition(1, hit.point);
-            //    lr.enabled = true;
-            //}
+        //if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, clickMask[2]))
+        //{
+        //    currentObjectBeingHit = hit.transform.gameObject;
+        //    lr.SetPosition(1, hit.point);
+        //    lr.enabled = true;
+        //}
 
-            /*
-                    if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, clickMask2))
+        /*
+                if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, clickMask2))
+                {
+                    lr.SetPosition(1, hit.point);
+                    lr.enabled = true;
+
+                    if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
                     {
-                        lr.SetPosition(1, hit.point);
-                        lr.enabled = true;
-
-                        if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
-                        {
-                            objectManager.enableModel2();
-                        }
-                        //     Debug.Log(hit.point);
-
+                        objectManager.enableModel2();
                     }
-                    else
-                    {
-                        lr.enabled = false;
-                    }
+                    //     Debug.Log(hit.point);
+
+                }
+                else
+                {
+                    lr.enabled = false;
+                }
 
 
 
-                    // debug controller transform location.
+                // debug controller transform location.
 
-                    /*
-                      if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
-                    {
-                        Debug.Log(currentdistanceFromHeadMainHand);
-                        Debug.Log("controller rotation X = " + controllerRotationX);
-                        Debug.Log("controller rotation Y = " + controllerRotationY);
-                        Debug.Log("controller rotation Z = " + controllerRotationZ);
-                    }
+                /*
+                  if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+                {
+                    Debug.Log(currentdistanceFromHeadMainHand);
+                    Debug.Log("controller rotation X = " + controllerRotationX);
+                    Debug.Log("controller rotation Y = " + controllerRotationY);
+                    Debug.Log("controller rotation Z = " + controllerRotationZ);
+                }
 
-                */
+            */
 
 
-            //-------------------------------------------------------------------------
-            //                        UI MENU FUNCTIONALITY 
-            //
-            // this module allows the user to enable the interactive UI menu.
-            // using grip button input, menu is enables and controller model 
-            // is disabled
-            //-------------------------------------------------------------------------
+        //-------------------------------------------------------------------------
+        //                        UI MENU FUNCTIONALITY 
+        //
+        // this module allows the user to enable the interactive UI menu.
+        // using grip button input, menu is enables and controller model 
+        // is disabled
+        //-------------------------------------------------------------------------
 
-            if (helperMenuOn == false)
+        if (helperMenuOn == false)
         {
             if (device.GetPress(SteamVR_Controller.ButtonMask.Grip))
             {
@@ -385,10 +388,11 @@ public class HandController : MonoBehaviour
             if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
             {
                 device.TriggerHapticPulse(3000);
-                
+
                 RenderSettings.skybox = nightBox;
                 sun.SetActive(false);
-
+                nightSound.SetActive(true);
+                daySound.SetActive(false);
             }
         }
 
@@ -399,24 +403,16 @@ public class HandController : MonoBehaviour
                 device.TriggerHapticPulse(3000);
                 RenderSettings.skybox = dayBox;
                 sun.SetActive(true);
+                nightSound.SetActive(false);
+                daySound.SetActive(true);
             }
         }
 
-        if (col.gameObject.CompareTag("Helper"))
-        {
-            if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
-            {
-                device.TriggerHapticPulse(3000);
-                helperMenuManager.TurnOnHelperBothControllers();
-                helperMenuParent.SetActive(true);
-                //uiMenu.SetActive(false);
 
-            }
-        }
 
         if (col.gameObject.CompareTag("ModelHome"))
         {
-                if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+            if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
             {
                 dropObjectModel(col);
                 isGrabbingModel = false;
@@ -433,8 +429,6 @@ public class HandController : MonoBehaviour
                 }
             }
         }
-
-
     }
 
     public void OnTriggerEnter(Collider col)
@@ -444,6 +438,26 @@ public class HandController : MonoBehaviour
             device.TriggerHapticPulse(1000);
         }
 
+        if (col.gameObject.CompareTag("Helper"))
+        {
+            device.TriggerHapticPulse(3000);
+            helperMenuManager.TurnOnHelperBothControllers();
+            helperMenuParent.SetActive(true);
+        }
+
+        if (col.gameObject.CompareTag("HelperIntro"))
+        {
+            device.TriggerHapticPulse(3000);
+            helperMenuManager.TurnOnHelperBothControllers();
+            helperMenuParent.SetActive(true);
+        }
+
+        if (col.gameObject.CompareTag("HomeIntro"))
+        {
+            gameObject.SetActive(false);
+            device.TriggerHapticPulse(3000);
+            SteamVR_LoadLevel.Begin(scene, false, 2);
+        }
     }
 
     void grabObjectModel(Collider col)

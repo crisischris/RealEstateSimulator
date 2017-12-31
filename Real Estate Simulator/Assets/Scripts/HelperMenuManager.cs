@@ -4,35 +4,16 @@ using UnityEngine;
 
 public class HelperMenuManager : MonoBehaviour
 {
-
     public bool helperMenuIsOff = false;
     public int helperMenuInt;
-
-
     public GameObject helperMenuParent;
     public List<GameObject> helperMenuText;
     public int currentMenuPlace = 0;
     public int IntroCounter = 0;
-
     public GameObject controller1;
     public GameObject controller2;
-
     public GameObject audioManager;
     public AudioSource[] sources;
-
-
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     //-------------------------------------------------------------------------
     //                        HELPER MENU FUNCTIONALITY 
@@ -54,7 +35,6 @@ public class HelperMenuManager : MonoBehaviour
             currentMenuPlace = 0;
             IntroCounter = 1;
         }
-
         else
 
             helperMenuText[currentMenuPlace].SetActive(true);
@@ -71,7 +51,6 @@ public class HelperMenuManager : MonoBehaviour
         }
 
         helperMenuText[currentMenuPlace].SetActive(true);
-
     }
 
     public void TurnOnHelperBothControllers()

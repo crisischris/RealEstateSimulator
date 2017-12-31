@@ -58,7 +58,7 @@ LightmapSettings:
     serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 80
-    m_TextureWidth: 1024
+    m_TextureWidth: 512
     m_TextureHeight: 1024
     m_AO: 0
     m_AOMaxDistance: 1
@@ -928,7 +928,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b94ec953095b5041abebcecb59b7473, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &376161745
+--- !u!21 &395802358
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -3517,12 +3517,12 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 376161745}
+      objectReference: {fileID: 395802358}
     - target: {fileID: 33441459347301312, guid: 67efc13956311304c91813f1c6e58b77,
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1547189500}
+      objectReference: {fileID: 1583496720}
     - target: {fileID: 114097912426033618, guid: 67efc13956311304c91813f1c6e58b77,
         type: 2}
       propertyPath: nightBox
@@ -3667,7 +3667,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b94ec953095b5041abebcecb59b7473, type: 2}
   m_IsPrefabParent: 0
---- !u!43 &1547189500
+--- !u!1 &1557980861 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1353209001468154, guid: 67efc13956311304c91813f1c6e58b77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451962713}
+--- !u!114 &1557980862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557980861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 1451962715}
+  _ears: {fileID: 1451962714}
+  wireframe: 0
+--- !u!43 &1583496720
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3795,25 +3814,6 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!1 &1557980861 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1353209001468154, guid: 67efc13956311304c91813f1c6e58b77,
-    type: 2}
-  m_PrefabInternal: {fileID: 1451962713}
---- !u!114 &1557980862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1557980861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 1451962715}
-  _ears: {fileID: 1451962714}
-  wireframe: 0
 --- !u!1 &1600998051
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,53 +4,32 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-
     public GameObject headEyes;
-
     public AudioSource[] sources;
     public AudioClip openSound;
     public AudioClip closeSound;
-
-
     public float doorDistanceToHead;
-
     public Vector3 doorPos;
     public Vector3 playerPos;
     public Vector3 localPos;
-
     public int DoorCounter = 1;
-
     public int audioCounter = 1;
-
-
     public int rotateDirection;
-
     public bool doorOpensOnce;
-
     public bool regularDoor;
-
-
-
-
-
 
     // Use this for initialization
     void Start()
     {
-
         DoorCounter = 1;
         doorPos = transform.position;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
         playerPos = headEyes.transform.position;
         doorDistanceToHead = Vector3.Distance(doorPos, playerPos);
-
-        
 
         if (doorDistanceToHead <= 1.5 && DoorCounter == 1)
         {
@@ -64,17 +43,16 @@ public class Door : MonoBehaviour
             }
         }
 
-
         if (doorDistanceToHead > 1.5 && DoorCounter == 2)
         {
-            if (regularDoor) {
+            if (regularDoor)
+            {
                 if (!doorOpensOnce)
                 {
                     StartCoroutine(closeDoor());
                     if (audioCounter == 2)
                     {
                         closeDoorAudio();
-
                     }
                 }
             }
@@ -88,7 +66,6 @@ public class Door : MonoBehaviour
         DoorCounter = 2;
     }
 
-
     IEnumerator closeDoor()
     {
         gameObject.transform.Rotate(Vector3.up, -rotateDirection * Time.deltaTime);
@@ -96,12 +73,10 @@ public class Door : MonoBehaviour
         DoorCounter = 1;
     }
 
-
     public void openDoorAudio()
     {
         sources[0].PlayOneShot(openSound);
         audioCounter = 2;
-
     }
 
     public void closeDoorAudio()
@@ -109,7 +84,4 @@ public class Door : MonoBehaviour
         sources[1].PlayOneShot(closeSound);
         audioCounter = 1;
     }
-
-    
-
 }

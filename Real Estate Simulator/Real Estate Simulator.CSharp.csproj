@@ -130,12 +130,9 @@
     <Compile Include="Assets\Scripts\HandController.cs" />
     <Compile Include="Assets\Scripts\HelperMenuIntro.cs" />
     <Compile Include="Assets\Scripts\HelperMenuManager.cs" />
-    <Compile Include="Assets\Scripts\HelperMenuTracker.cs" />
     <Compile Include="Assets\Scripts\Hover.cs" />
-    <Compile Include="Assets\Scripts\MatChange.cs" />
     <Compile Include="Assets\Scripts\ModelControl.cs" />
     <Compile Include="Assets\Scripts\ObjectManager.cs" />
-    <Compile Include="Assets\Scripts\OpenButton.cs" />
     <Compile Include="Assets\Scripts\rotate.cs" />
     <Compile Include="Assets\Scripts\sceneManager.cs" />
     <Compile Include="Assets\Scripts\SpeechRecognition.cs" />

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/Cabin3.unity
+- path: Assets/scenes/Intro.unity
   isLoaded: 1
   isActive: 1
